@@ -71,3 +71,20 @@ h1 {
     font-size: 18px;
     color: #333;
 }
+
+/* src/components/HomePage.css */
+.add-item-link {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #6432a8;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.add-item-link:hover {
+    background-color: #502990;
+}
+

@@ -1,13 +1,16 @@
 // src/components/HomePage.js
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import './HomePage.css'; // Make sure to create this CSS file for styles
+import './HomePage.css';
+import { Link, useNavigate } from 'react-router-dom';
 
 const HomePage = () => {
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(true);
   const [searchQuery, setSearchQuery] = useState('');
   const [sortOption, setSortOption] = useState('name'); // Default sort by name
+  const navigate = useNavigate();
+  const user = JSON.parse(localStorage.getItem('user')); // Fetch user data from localStorage
 
   useEffect(() => {
     // Fetch auction items from the backend
@@ -47,9 +50,31 @@ const HomePage = () => {
       return 0;
     });
 
+  // Handle logout
+  const handleLogout = () => {
+    localStorage.removeItem('user'); // Clear user data from local storage
+    navigate('/'); // Redirect to homepage
+  };
+
   return (
     <div className="homepage">
       <h1>Jewelry Auction</h1>
+
+      {/* Navigation buttons */}
+      {!user ? (
+        <div>
+          <button onClick={() => navigate('/login')}>Login</button>
+          <button onClick={() => navigate('/signup')}>Sign Up</button>
+        </div>
+      ) : (
+        <div>
+          {user.role === 'admin' && (
+            <button onClick={() => navigate('/admin')}>Admin Panel</button>
+          )}
+          <button onClick={() => navigate('/add-item')}>Add New Item</button>
+          <button onClick={handleLogout}>Logout</button> {/* Logout button */}
+        </div>
+      )}
 
       {/* Search Bar */}
       <div className="search-bar">
