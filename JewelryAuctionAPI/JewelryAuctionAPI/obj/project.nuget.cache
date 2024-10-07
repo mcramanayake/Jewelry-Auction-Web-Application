@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "njJUwAtwxyM=",
+  "dgSpecHash": "DTt7liwOdCM=",
   "success": true,
-  "projectFilePath": "D:\\Projects\\GrpProjects\\JewelryAuctionAPI\\JewelryAuctionAPI\\JewelryAuctionAPI.csproj",
+  "projectFilePath": "C:\\Users\\M.C Ramanayake\\Documents\\GitHub\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\jewelryAuctionAPI\\JewelryAuctionAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\M.C Ramanayake\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\M.C Ramanayake\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\8.0.8\\microsoft.aspnetcore.jsonpatch.8.0.8.nupkg.sha512",

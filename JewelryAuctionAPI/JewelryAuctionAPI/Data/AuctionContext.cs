@@ -7,6 +7,7 @@ namespace JewelryAuctionAPI.Data
     {
         public AuctionContext(DbContextOptions<AuctionContext> options) : base(options) { }
 
+        public DbSet<User> Users { get; set; }
         public DbSet<AuctionItem> AuctionItems { get; set; }
     }
 }
