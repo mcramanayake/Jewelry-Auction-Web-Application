@@ -1,49 +1,49 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Projects\\GrpProjects\\JewelryAuctionWeb\\JewelryAuctionAPI\\",
+  "WorkspaceRootPath": "C:\\Users\\M.C Ramanayake\\Documents\\GitHub\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{12CB2141-9952-4ADE-BBA4-4B8308038619}|JewelryAuctionAPI\\JewelryAuctionAPI.csproj|d:\\projects\\grpprojects\\jewelryauctionweb\\jewelryauctionapi\\jewelryauctionapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{12CB2141-9952-4ADE-BBA4-4B8308038619}|JewelryAuctionAPI\\JewelryAuctionAPI.csproj|c:\\users\\m.c ramanayake\\documents\\github\\jewelry-auction-web-application\\jewelryauctionapi\\jewelryauctionapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{12CB2141-9952-4ADE-BBA4-4B8308038619}|JewelryAuctionAPI\\JewelryAuctionAPI.csproj|solutionrelative:jewelryauctionapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{12CB2141-9952-4ADE-BBA4-4B8308038619}|JewelryAuctionAPI\\JewelryAuctionAPI.csproj|d:\\projects\\grpprojects\\jewelryauctionweb\\jewelryauctionapi\\jewelryauctionapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{12CB2141-9952-4ADE-BBA4-4B8308038619}|JewelryAuctionAPI\\JewelryAuctionAPI.csproj|c:\\users\\m.c ramanayake\\documents\\github\\jewelry-auction-web-application\\jewelryauctionapi\\jewelryauctionapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{12CB2141-9952-4ADE-BBA4-4B8308038619}|JewelryAuctionAPI\\JewelryAuctionAPI.csproj|solutionrelative:jewelryauctionapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{12CB2141-9952-4ADE-BBA4-4B8308038619}|JewelryAuctionAPI\\JewelryAuctionAPI.csproj|d:\\projects\\grpprojects\\jewelryauctionweb\\jewelryauctionapi\\jewelryauctionapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{12CB2141-9952-4ADE-BBA4-4B8308038619}|JewelryAuctionAPI\\JewelryAuctionAPI.csproj|c:\\users\\m.c ramanayake\\documents\\github\\jewelry-auction-web-application\\jewelryauctionapi\\jewelryauctionapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{12CB2141-9952-4ADE-BBA4-4B8308038619}|JewelryAuctionAPI\\JewelryAuctionAPI.csproj|solutionrelative:jewelryauctionapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{12CB2141-9952-4ADE-BBA4-4B8308038619}|JewelryAuctionAPI\\JewelryAuctionAPI.csproj|d:\\projects\\grpprojects\\jewelryauctionweb\\jewelryauctionapi\\jewelryauctionapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{12CB2141-9952-4ADE-BBA4-4B8308038619}|JewelryAuctionAPI\\JewelryAuctionAPI.csproj|c:\\users\\m.c ramanayake\\documents\\github\\jewelry-auction-web-application\\jewelryauctionapi\\jewelryauctionapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{12CB2141-9952-4ADE-BBA4-4B8308038619}|JewelryAuctionAPI\\JewelryAuctionAPI.csproj|solutionrelative:jewelryauctionapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{12CB2141-9952-4ADE-BBA4-4B8308038619}|JewelryAuctionAPI\\JewelryAuctionAPI.csproj|d:\\projects\\grpprojects\\jewelryauctionweb\\jewelryauctionapi\\jewelryauctionapi\\models\\auctionitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{12CB2141-9952-4ADE-BBA4-4B8308038619}|JewelryAuctionAPI\\JewelryAuctionAPI.csproj|c:\\users\\m.c ramanayake\\documents\\github\\jewelry-auction-web-application\\jewelryauctionapi\\jewelryauctionapi\\models\\auctionitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{12CB2141-9952-4ADE-BBA4-4B8308038619}|JewelryAuctionAPI\\JewelryAuctionAPI.csproj|solutionrelative:jewelryauctionapi\\models\\auctionitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{12CB2141-9952-4ADE-BBA4-4B8308038619}|JewelryAuctionAPI\\JewelryAuctionAPI.csproj|d:\\projects\\grpprojects\\jewelryauctionweb\\jewelryauctionapi\\jewelryauctionapi\\data\\auctioncontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{12CB2141-9952-4ADE-BBA4-4B8308038619}|JewelryAuctionAPI\\JewelryAuctionAPI.csproj|c:\\users\\m.c ramanayake\\documents\\github\\jewelry-auction-web-application\\jewelryauctionapi\\jewelryauctionapi\\data\\auctioncontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{12CB2141-9952-4ADE-BBA4-4B8308038619}|JewelryAuctionAPI\\JewelryAuctionAPI.csproj|solutionrelative:jewelryauctionapi\\data\\auctioncontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{12CB2141-9952-4ADE-BBA4-4B8308038619}|JewelryAuctionAPI\\JewelryAuctionAPI.csproj|d:\\projects\\grpprojects\\jewelryauctionweb\\jewelryauctionapi\\jewelryauctionapi\\controllers\\auctioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{12CB2141-9952-4ADE-BBA4-4B8308038619}|JewelryAuctionAPI\\JewelryAuctionAPI.csproj|c:\\users\\m.c ramanayake\\documents\\github\\jewelry-auction-web-application\\jewelryauctionapi\\jewelryauctionapi\\controllers\\auctioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{12CB2141-9952-4ADE-BBA4-4B8308038619}|JewelryAuctionAPI\\JewelryAuctionAPI.csproj|solutionrelative:jewelryauctionapi\\controllers\\auctioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{12CB2141-9952-4ADE-BBA4-4B8308038619}|JewelryAuctionAPI\\JewelryAuctionAPI.csproj|d:\\projects\\grpprojects\\jewelryauctionweb\\jewelryauctionapi\\jewelryauctionapi\\jewelryauctionapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{12CB2141-9952-4ADE-BBA4-4B8308038619}|JewelryAuctionAPI\\JewelryAuctionAPI.csproj|c:\\users\\m.c ramanayake\\documents\\github\\jewelry-auction-web-application\\jewelryauctionapi\\jewelryauctionapi\\jewelryauctionapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{12CB2141-9952-4ADE-BBA4-4B8308038619}|JewelryAuctionAPI\\JewelryAuctionAPI.csproj|solutionrelative:jewelryauctionapi\\jewelryauctionapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{12CB2141-9952-4ADE-BBA4-4B8308038619}|JewelryAuctionAPI\\JewelryAuctionAPI.csproj|d:\\projects\\grpprojects\\jewelryauctionweb\\jewelryauctionapi\\jewelryauctionapi\\migrations\\20241006101709_autogeneratedauctionitemid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{12CB2141-9952-4ADE-BBA4-4B8308038619}|JewelryAuctionAPI\\JewelryAuctionAPI.csproj|c:\\users\\m.c ramanayake\\documents\\github\\jewelry-auction-web-application\\jewelryauctionapi\\jewelryauctionapi\\migrations\\20241006101709_autogeneratedauctionitemid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{12CB2141-9952-4ADE-BBA4-4B8308038619}|JewelryAuctionAPI\\JewelryAuctionAPI.csproj|solutionrelative:jewelryauctionapi\\migrations\\20241006101709_autogeneratedauctionitemid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{12CB2141-9952-4ADE-BBA4-4B8308038619}|JewelryAuctionAPI\\JewelryAuctionAPI.csproj|d:\\projects\\grpprojects\\jewelryauctionweb\\jewelryauctionapi\\jewelryauctionapi\\jewelryauctionapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "AbsoluteMoniker": "D:0:0:{12CB2141-9952-4ADE-BBA4-4B8308038619}|JewelryAuctionAPI\\JewelryAuctionAPI.csproj|c:\\users\\m.c ramanayake\\documents\\github\\jewelry-auction-web-application\\jewelryauctionapi\\jewelryauctionapi\\jewelryauctionapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
       "RelativeMoniker": "D:0:0:{12CB2141-9952-4ADE-BBA4-4B8308038619}|JewelryAuctionAPI\\JewelryAuctionAPI.csproj|solutionrelative:jewelryauctionapi\\jewelryauctionapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{12CB2141-9952-4ADE-BBA4-4B8308038619}|JewelryAuctionAPI\\JewelryAuctionAPI.csproj|d:\\projects\\grpprojects\\jewelryauctionweb\\jewelryauctionapi\\jewelryauctionapi\\migrations\\20241006100620_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{12CB2141-9952-4ADE-BBA4-4B8308038619}|JewelryAuctionAPI\\JewelryAuctionAPI.csproj|c:\\users\\m.c ramanayake\\documents\\github\\jewelry-auction-web-application\\jewelryauctionapi\\jewelryauctionapi\\migrations\\20241006100620_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{12CB2141-9952-4ADE-BBA4-4B8308038619}|JewelryAuctionAPI\\JewelryAuctionAPI.csproj|solutionrelative:jewelryauctionapi\\migrations\\20241006100620_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -54,54 +54,39 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\Projects\\GrpProjects\\JewelryAuctionWeb\\JewelryAuctionAPI\\JewelryAuctionAPI\\Models\\User.cs",
-              "RelativeDocumentMoniker": "JewelryAuctionAPI\\Models\\User.cs",
-              "ToolTip": "D:\\Projects\\GrpProjects\\JewelryAuctionWeb\\JewelryAuctionAPI\\JewelryAuctionAPI\\Models\\User.cs",
-              "RelativeToolTip": "JewelryAuctionAPI\\Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T17:38:19.607Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Projects\\GrpProjects\\JewelryAuctionWeb\\JewelryAuctionAPI\\JewelryAuctionAPI\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\M.C Ramanayake\\Documents\\GitHub\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\Program.cs",
               "RelativeDocumentMoniker": "JewelryAuctionAPI\\Program.cs",
-              "ToolTip": "D:\\Projects\\GrpProjects\\JewelryAuctionWeb\\JewelryAuctionAPI\\JewelryAuctionAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\M.C Ramanayake\\Documents\\GitHub\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\Program.cs",
               "RelativeToolTip": "JewelryAuctionAPI\\Program.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAuwCgAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T09:44:44.519Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-06T09:44:44.519Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Projects\\GrpProjects\\JewelryAuctionWeb\\JewelryAuctionAPI\\JewelryAuctionAPI\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\M.C Ramanayake\\Documents\\GitHub\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\appsettings.json",
               "RelativeDocumentMoniker": "JewelryAuctionAPI\\appsettings.json",
-              "ToolTip": "D:\\Projects\\GrpProjects\\JewelryAuctionWeb\\JewelryAuctionAPI\\JewelryAuctionAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\M.C Ramanayake\\Documents\\GitHub\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\appsettings.json",
               "RelativeToolTip": "JewelryAuctionAPI\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-06T10:02:25.133Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-06T10:02:25.133Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "UserController.cs",
-              "DocumentMoniker": "D:\\Projects\\GrpProjects\\JewelryAuctionWeb\\JewelryAuctionAPI\\JewelryAuctionAPI\\Controllers\\UserController.cs",
+              "DocumentMoniker": "C:\\Users\\M.C Ramanayake\\Documents\\GitHub\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "JewelryAuctionAPI\\Controllers\\UserController.cs",
-              "ToolTip": "D:\\Projects\\GrpProjects\\JewelryAuctionWeb\\JewelryAuctionAPI\\JewelryAuctionAPI\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\M.C Ramanayake\\Documents\\GitHub\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\Controllers\\UserController.cs",
               "RelativeToolTip": "JewelryAuctionAPI\\Controllers\\UserController.cs",
               "ViewState": "AgIAABgAAAAAAAAAAAAmwDQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -110,63 +95,71 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\M.C Ramanayake\\Documents\\GitHub\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\Models\\User.cs",
+              "RelativeDocumentMoniker": "JewelryAuctionAPI\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\M.C Ramanayake\\Documents\\GitHub\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\Models\\User.cs",
+              "RelativeToolTip": "JewelryAuctionAPI\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T17:38:19.607Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
               "Title": "AuctionItem.cs",
-              "DocumentMoniker": "D:\\Projects\\GrpProjects\\JewelryAuctionWeb\\JewelryAuctionAPI\\JewelryAuctionAPI\\Models\\AuctionItem.cs",
+              "DocumentMoniker": "C:\\Users\\M.C Ramanayake\\Documents\\GitHub\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\Models\\AuctionItem.cs",
               "RelativeDocumentMoniker": "JewelryAuctionAPI\\Models\\AuctionItem.cs",
-              "ToolTip": "D:\\Projects\\GrpProjects\\JewelryAuctionWeb\\JewelryAuctionAPI\\JewelryAuctionAPI\\Models\\AuctionItem.cs",
+              "ToolTip": "C:\\Users\\M.C Ramanayake\\Documents\\GitHub\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\Models\\AuctionItem.cs",
               "RelativeToolTip": "JewelryAuctionAPI\\Models\\AuctionItem.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T09:33:54.976Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-06T09:33:54.976Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "AuctionContext.cs",
-              "DocumentMoniker": "D:\\Projects\\GrpProjects\\JewelryAuctionWeb\\JewelryAuctionAPI\\JewelryAuctionAPI\\Data\\AuctionContext.cs",
+              "DocumentMoniker": "C:\\Users\\M.C Ramanayake\\Documents\\GitHub\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\Data\\AuctionContext.cs",
               "RelativeDocumentMoniker": "JewelryAuctionAPI\\Data\\AuctionContext.cs",
-              "ToolTip": "D:\\Projects\\GrpProjects\\JewelryAuctionWeb\\JewelryAuctionAPI\\JewelryAuctionAPI\\Data\\AuctionContext.cs",
+              "ToolTip": "C:\\Users\\M.C Ramanayake\\Documents\\GitHub\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\Data\\AuctionContext.cs",
               "RelativeToolTip": "JewelryAuctionAPI\\Data\\AuctionContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T09:57:47.866Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-06T09:57:47.866Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "AuctionController.cs",
-              "DocumentMoniker": "D:\\Projects\\GrpProjects\\JewelryAuctionWeb\\JewelryAuctionAPI\\JewelryAuctionAPI\\Controllers\\AuctionController.cs",
+              "DocumentMoniker": "C:\\Users\\M.C Ramanayake\\Documents\\GitHub\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\Controllers\\AuctionController.cs",
               "RelativeDocumentMoniker": "JewelryAuctionAPI\\Controllers\\AuctionController.cs",
-              "ToolTip": "D:\\Projects\\GrpProjects\\JewelryAuctionWeb\\JewelryAuctionAPI\\JewelryAuctionAPI\\Controllers\\AuctionController.cs",
+              "ToolTip": "C:\\Users\\M.C Ramanayake\\Documents\\GitHub\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\Controllers\\AuctionController.cs",
               "RelativeToolTip": "JewelryAuctionAPI\\Controllers\\AuctionController.cs",
               "ViewState": "AgIAAGQAAAAAAAAAAAAmwIAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T09:34:34.715Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-06T09:34:34.715Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "JewelryAuctionAPI.csproj",
-              "DocumentMoniker": "D:\\Projects\\GrpProjects\\JewelryAuctionWeb\\JewelryAuctionAPI\\JewelryAuctionAPI\\JewelryAuctionAPI.csproj",
+              "DocumentMoniker": "C:\\Users\\M.C Ramanayake\\Documents\\GitHub\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\JewelryAuctionAPI.csproj",
               "RelativeDocumentMoniker": "JewelryAuctionAPI\\JewelryAuctionAPI.csproj",
-              "ToolTip": "D:\\Projects\\GrpProjects\\JewelryAuctionWeb\\JewelryAuctionAPI\\JewelryAuctionAPI\\JewelryAuctionAPI.csproj",
+              "ToolTip": "C:\\Users\\M.C Ramanayake\\Documents\\GitHub\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\JewelryAuctionAPI.csproj",
               "RelativeToolTip": "JewelryAuctionAPI\\JewelryAuctionAPI.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-10-06T09:45:26.964Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-06T09:45:26.964Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "20241006101709_AutoGeneratedAuctionItemId.cs",
-              "DocumentMoniker": "D:\\Projects\\GrpProjects\\JewelryAuctionWeb\\JewelryAuctionAPI\\JewelryAuctionAPI\\Migrations\\20241006101709_AutoGeneratedAuctionItemId.cs",
+              "DocumentMoniker": "C:\\Users\\M.C Ramanayake\\Documents\\GitHub\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\Migrations\\20241006101709_AutoGeneratedAuctionItemId.cs",
               "RelativeDocumentMoniker": "JewelryAuctionAPI\\Migrations\\20241006101709_AutoGeneratedAuctionItemId.cs",
-              "ToolTip": "D:\\Projects\\GrpProjects\\JewelryAuctionWeb\\JewelryAuctionAPI\\JewelryAuctionAPI\\Migrations\\20241006101709_AutoGeneratedAuctionItemId.cs",
+              "ToolTip": "C:\\Users\\M.C Ramanayake\\Documents\\GitHub\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\Migrations\\20241006101709_AutoGeneratedAuctionItemId.cs",
               "RelativeToolTip": "JewelryAuctionAPI\\Migrations\\20241006101709_AutoGeneratedAuctionItemId.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -176,9 +169,9 @@
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "JewelryAuctionAPI.http",
-              "DocumentMoniker": "D:\\Projects\\GrpProjects\\JewelryAuctionWeb\\JewelryAuctionAPI\\JewelryAuctionAPI\\JewelryAuctionAPI.http",
+              "DocumentMoniker": "C:\\Users\\M.C Ramanayake\\Documents\\GitHub\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\JewelryAuctionAPI.http",
               "RelativeDocumentMoniker": "JewelryAuctionAPI\\JewelryAuctionAPI.http",
-              "ToolTip": "D:\\Projects\\GrpProjects\\JewelryAuctionWeb\\JewelryAuctionAPI\\JewelryAuctionAPI\\JewelryAuctionAPI.http",
+              "ToolTip": "C:\\Users\\M.C Ramanayake\\Documents\\GitHub\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\JewelryAuctionAPI.http",
               "RelativeToolTip": "JewelryAuctionAPI\\JewelryAuctionAPI.http",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
@@ -188,9 +181,9 @@
               "$type": "Document",
               "DocumentIndex": 10,
               "Title": "20241006100620_InitialCreate.cs",
-              "DocumentMoniker": "D:\\Projects\\GrpProjects\\JewelryAuctionWeb\\JewelryAuctionAPI\\JewelryAuctionAPI\\Migrations\\20241006100620_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\M.C Ramanayake\\Documents\\GitHub\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\Migrations\\20241006100620_InitialCreate.cs",
               "RelativeDocumentMoniker": "JewelryAuctionAPI\\Migrations\\20241006100620_InitialCreate.cs",
-              "ToolTip": "D:\\Projects\\GrpProjects\\JewelryAuctionWeb\\JewelryAuctionAPI\\JewelryAuctionAPI\\Migrations\\20241006100620_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\M.C Ramanayake\\Documents\\GitHub\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\Migrations\\20241006100620_InitialCreate.cs",
               "RelativeToolTip": "JewelryAuctionAPI\\Migrations\\20241006100620_InitialCreate.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
