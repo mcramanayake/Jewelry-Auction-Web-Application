@@ -2,11 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import HomePage from './components/HomePage';
 import AddItemPage from './components/AddItemPage';
-import LoginPage from './components/LoginPage';
-import SignupPage from './components/SignupPage';
 import AdminDashboard from './components/AdminDashboard';
-import LoginSignup from './components/LoginSignUp/LoginSignup';
-import Login from './components/LoginSignUp/LoginSignup';
+import LoginSignup from './components/LoginSignUp/LoginSignup.jsx';
+import Login from './components/LoginSignUp/Login.jsx';
 import {RouterProvider, createBrowserRouter} from "react-router-dom";
 import MyAccount from './components/Profile/MyAccount';
 import MyBids from './components/Profile/MyBids';
@@ -64,8 +62,8 @@ function App() {
 
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/login" element={<LoginPage setUser={setUser} />} />
-        <Route path="/signup" element={<SignupPage />} />
+        <Route path="/login" element={<Login setUser={setUser} />} />
+        <Route path="/signup" element={<LoginSignup />} />
         <Route path="/admin" element={isAdmin ? <AdminDashboard /> : <Navigate to="/" />} />
         <Route path="/add-item" element={user ? <AddItemPage /> : <Navigate to="/login" />} />
         <Route path="*" element={<Navigate to={user ? "/" : "/signup"} />} />
