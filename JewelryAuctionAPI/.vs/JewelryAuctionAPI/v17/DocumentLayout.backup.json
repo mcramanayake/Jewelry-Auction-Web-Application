@@ -54,20 +54,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\M.C Ramanayake\\Documents\\GitHub\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\Models\\User.cs",
-              "RelativeDocumentMoniker": "JewelryAuctionAPI\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\M.C Ramanayake\\Documents\\GitHub\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\Models\\User.cs",
-              "RelativeToolTip": "JewelryAuctionAPI\\Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T17:38:19.607Z"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -104,6 +92,18 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-07T17:52:34.601Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\M.C Ramanayake\\Documents\\GitHub\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\Models\\User.cs",
+              "RelativeDocumentMoniker": "JewelryAuctionAPI\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\M.C Ramanayake\\Documents\\GitHub\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\Models\\User.cs",
+              "RelativeToolTip": "JewelryAuctionAPI\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T17:38:19.607Z"
             },
             {
               "$type": "Document",
