@@ -101,7 +101,7 @@ const LoginSignup =  () => {
             <button type="submit" className="submit">Register</button>
           </div>
           {formErrors.auth && <p className="auth-error">{formErrors.auth}</p>}
-          <div className="forgot-password">Already registered? <span><Link to="/login" className="btn">Log in</Link></span></div>
+          <div className="forgot-password">Already registered? <span><Link to="/login" className="btn">Log in</Link></span><Link to="/MyAccount">Profile</Link></div>
         </form>
       </div>
 

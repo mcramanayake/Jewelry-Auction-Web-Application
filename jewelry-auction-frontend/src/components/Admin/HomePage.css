@@ -1,0 +1,90 @@
+/* src/components/HomePage.css */
+.homepage {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    text-align: center;
+    color: #6432a8; /* Your color theme */
+}
+
+.search-bar {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.sort-options {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.sort-options label {
+    margin-right: 10px;
+}
+
+.items-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.auction-item {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    width: 250px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.auction-item:hover {
+    transform: scale(1.05);
+}
+
+.bid-button {
+    background-color: #32a852;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.bid-button:hover {
+    background-color: #28a745;
+}
+
+.loading {
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+}
+
+/* src/components/HomePage.css */
+.add-item-link {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #6432a8;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.add-item-link:hover {
+    background-color: #502990;
+}
+

@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
-import HomePage from './components/HomePage';
-import AddItemPage from './components/AddItemPage';
-import AdminDashboard from './components/AdminDashboard';
-import LoginSignup from './components/LoginSignUp/LoginSignup.jsx';
-import Login from './components/LoginSignUp/Login.jsx';
+import HomePage from './components/Admin/HomePage';
+import AddItemPage from './components/Admin/AddItemPage';
+import AdminDashboard from './components/Admin/AdminDashboard';
+import LoginSignup from './components/LoginSignUp/LoginSignup';
+import Login from './components/LoginSignUp/Login';
 import {RouterProvider, createBrowserRouter} from "react-router-dom";
 import MyAccount from './components/Profile/MyAccount';
 import MyBids from './components/Profile/MyBids';
-import Payments from './components/Profile/Payments'; 
+import Payments from './components/Profile/Payments';
 import Winnings from './components/Profile/Winnings';
 
 function App() {
@@ -61,7 +61,7 @@ function App() {
     <Router>
 
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/Home" element={<HomePage />} />
         <Route path="/login" element={<Login setUser={setUser} />} />
         <Route path="/signup" element={<LoginSignup />} />
         <Route path="/admin" element={isAdmin ? <AdminDashboard /> : <Navigate to="/" />} />
