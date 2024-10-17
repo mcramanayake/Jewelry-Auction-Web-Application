@@ -3149,19 +3149,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\M.C Ramanayake\\.nuget\\packages\\": {}
+    "C:\\Users\\Senuki\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\M.C Ramanayake\\Documents\\GitHub\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\JewelryAuctionAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Senuki\\Desktop\\React\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\JewelryAuctionAPI.csproj",
       "projectName": "JewelryAuctionAPI",
-      "projectPath": "C:\\Users\\M.C Ramanayake\\Documents\\GitHub\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\JewelryAuctionAPI.csproj",
-      "packagesPath": "C:\\Users\\M.C Ramanayake\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\M.C Ramanayake\\Documents\\GitHub\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\obj\\",
+      "projectPath": "C:\\Users\\Senuki\\Desktop\\React\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\JewelryAuctionAPI.csproj",
+      "packagesPath": "C:\\Users\\Senuki\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Senuki\\Desktop\\React\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\M.C Ramanayake\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Senuki\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3244,5 +3244,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json."
+    }
+  ]
 }

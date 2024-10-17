@@ -5,6 +5,8 @@ import axios from 'axios';
 import { jwtDecode } from 'jwt-decode';
 
 
+
+
 const Login = () => {
 
     const [action,setAction] = useState("LOG IN");
@@ -42,7 +44,7 @@ const Login = () => {
           console.log('Logged in user:', user);
   
           // Navigate to user account or dashboard
-          navigate('/MyAccount');
+          //navigate('/MyAccount');
         } catch (error) {
           console.error('Login error:', error);
           setFormErrors({ ...formErrors, auth: 'Invalid email or password' });
@@ -100,7 +102,8 @@ const Login = () => {
               <button className="submit">Log in</button>
             </div>
             {formErrors.auth && <p className="auth-error">{formErrors.auth}</p>} 
-            <div className="forgot-password">Not Registered? <span><Link to="/" className="btn">Register</Link></span> <Link to="/MyAccount"> Profile </Link></div>
+            <div className="forgot-password">Not Registered? <span><Link to="/Signup" className="btn">Register</Link></span></div>
+            <p> <Link to="/MyAccount"> Profile </Link></p>
             
         </form>
       
