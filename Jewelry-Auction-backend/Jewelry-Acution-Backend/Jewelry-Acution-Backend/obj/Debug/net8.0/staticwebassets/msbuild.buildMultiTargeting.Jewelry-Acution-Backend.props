@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Jewelry-Acution-Backend.props" />
+</Project>

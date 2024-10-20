@@ -1,0 +1,108 @@
+/*profile menu*/
+.profile-container {
+    top: 0;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.profile-hero {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    height: 40vh;
+    background-image: url('../Assests/cover.jpg'); 
+    background-size: cover;
+    background-position: center;
+}
+
+.profile-hero h1 {
+    font-size: 3rem;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 10%;
+}
+
+.profile-navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.profile-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 70px;
+    font-size: 20px;
+}
+
+.profile-menu li .active{
+    text-decoration: none;
+    color: #222222;
+}
+
+.profile-menu li{
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    cursor: pointer;
+}
+
+/*My Bids Table*/
+.MyBids{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 20px;
+}
+.Bid_table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.Bid_table th, table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.Bid_table th {
+    background-color: #222222;
+    color: #fff;
+}
+
+.Bid_table tr:hover {
+    background-color: #f9f9f9;
+}
+
+/*Footer*/
+
+.footer{
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 5%;
+    gap: 100px;
+    color: #fff;
+    background: #222222;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.footer .first{
+    width: 550px;
+}
+
+.footer .second ul li, .footer .third ul li{
+    list-style: none;
+    line-height: 40px;
+}
+
+
+@media(max-width: 768px){
+    .MyBids{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
