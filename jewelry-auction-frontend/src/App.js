@@ -35,6 +35,7 @@ function App() {
         <Route path="/admin" element={isAdmin ? <AdminDashboard /> : <Navigate to="/" />} />
         <Route path="/add-item" element={user ? <AddItemPage /> : <Navigate to="/login" />} />
         <Route path="*" element={<Navigate to={user ? "/" : "/signup"} />} />
+
       </Routes>
     </Router>
   );
