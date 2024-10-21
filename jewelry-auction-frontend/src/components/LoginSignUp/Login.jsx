@@ -29,7 +29,7 @@ const Login = () => {
             if (result.status === 200) {
                 console.log(result.data);
                 alert(result.data.Message); // Display login success message
-                navigate("/MyAccount");
+                navigate("/");
                 //backend eken gnn oyaa session id ekk user ge id eka ita passe methin eka save krgnn localstrge ekk vidht ethkot ussht lesi wei wd krgnn
             }
         })

@@ -18,11 +18,12 @@ function LoginSignup() {
             LastName,
             Email,
             Password, // Ensure this matches your Signup model
+            role: 'user',
           };
       
           await axios.post('https://localhost:7137/api/Users/signup', newUser);
           alert('Signup successful!');
-          navigate('/LoginPage');
+          navigate('/login');
         } catch (error) {
           console.error('Error during signup:', error);
           alert('Failed to sign up. Please try again.');
