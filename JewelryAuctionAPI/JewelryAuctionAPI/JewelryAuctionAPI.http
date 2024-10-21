@@ -1,0 +1,6 @@
+#@JewelryAuctionAPI_HostAddress = http://localhost:5282
+
+#GET {{JewelryAuctionAPI_HostAddress}}/weatherforecast/
+#Accept: application/json
+
+###
