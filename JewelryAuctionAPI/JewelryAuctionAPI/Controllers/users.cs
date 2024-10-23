@@ -86,5 +86,36 @@ namespace JewelryAuctionAPI.Controllers
             return Ok(new { Message = "Login successful" });
         }
 
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteUser(int id)
+        {
+            var user = await _context.Signups.FindAsync(id);
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            _context.Signups.Remove(user);
+            await _context.SaveChangesAsync();
+            return NoContent();
+        }
+
+
+        [HttpPatch("{id}/makeAdmin")]
+        public async Task<IActionResult> MakeAdmin(int id)
+        {
+            var user = await _context.Signups.FindAsync(id);
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            user.Role = "Admin"; // Assuming your role column allows "Admin"
+            await _context.SaveChangesAsync();
+            return NoContent();
+        }
+
+
+
     }
 }

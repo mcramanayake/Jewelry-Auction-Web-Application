@@ -155,6 +155,38 @@
   },
   {
     "ContainingType": "JewelryAuctionAPI.Controllers.Users",
+    "Method": "DeleteUser",
+    "RelativePath": "api/Users/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JewelryAuctionAPI.Controllers.Users",
+    "Method": "MakeAdmin",
+    "RelativePath": "api/Users/{id}/makeAdmin",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JewelryAuctionAPI.Controllers.Users",
     "Method": "Login",
     "RelativePath": "api/Users/login",
     "HttpMethod": "POST",
