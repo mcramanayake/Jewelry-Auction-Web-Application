@@ -517,3 +517,6 @@ C:\Users\Senuki\Desktop\React\Jewelry-Auction-Web-Application\JewelryAuctionAPI\
 C:\Users\Senuki\Desktop\React\Jewelry-Auction-Web-Application\JewelryAuctionAPI\JewelryAuctionAPI\obj\Debug\net8.0\JewelryAuctionAPI.pdb
 C:\Users\Senuki\Desktop\React\Jewelry-Auction-Web-Application\JewelryAuctionAPI\JewelryAuctionAPI\obj\Debug\net8.0\JewelryAuctionAPI.genruntimeconfig.cache
 C:\Users\Senuki\Desktop\React\Jewelry-Auction-Web-Application\JewelryAuctionAPI\JewelryAuctionAPI\obj\Debug\net8.0\ref\JewelryAuctionAPI.dll
+C:\Users\Senuki\Desktop\React\Jewelry-Auction-Web-Application\JewelryAuctionAPI\JewelryAuctionAPI\bin\Debug\net8.0\Stripe.net.dll
+C:\Users\Senuki\Desktop\React\Jewelry-Auction-Web-Application\JewelryAuctionAPI\JewelryAuctionAPI\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Senuki\Desktop\React\Jewelry-Auction-Web-Application\JewelryAuctionAPI\JewelryAuctionAPI\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
