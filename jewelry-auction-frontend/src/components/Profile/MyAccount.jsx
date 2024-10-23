@@ -100,10 +100,10 @@ const MyAccount = () => {
 
     return (
         <div>
-            {/* Navbar */}
+            {/*Navbar*/}
             <div className='navbar'>
-                <div className='nav-logo'>
-                    <p>The Auction Room</p>
+                <div className="nav-logo">
+                    <p><Link to='/HomePage' className="logo-home">The Auction Room</Link></p>
                 </div>
                 <ul className={`nav-menu ${isOpen ? 'nav-menu-active' : ''}`}>
                     <li>Auctions</li>
@@ -111,12 +111,13 @@ const MyAccount = () => {
                     <li>About</li>
                     <li>Contact</li>
                 </ul>
-                <div className='nav-login-user'>
-                    <FaCircleUser size={25} />
-                    <div className='nav-icon' onClick={toggleMenu}>
+                <div className="nav-login-user">
+                    <Link to='/MyAccount' className="user-nav"><FaCircleUser size={25} /></Link>  
+                    
+                    <div className="nav-icon" onClick={toggleMenu}>
                         <FaBars size={25} />
                     </div>
-                </div>
+                </div> 
             </div>
 
             {/* Content */}

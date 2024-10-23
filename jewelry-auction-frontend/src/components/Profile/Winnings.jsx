@@ -40,7 +40,7 @@ const Winnings = () => {
             {/*Navbar*/}
             <div className='navbar'>
                 <div className="nav-logo">
-                    <p>The Auction Room</p>
+                    <p><Link to='/HomePage' className="logo-home">The Auction Room</Link></p>
                 </div>
                 <ul className={`nav-menu ${isOpen ? 'nav-menu-active' : ''}`}>
                     <li>Auctions</li>
@@ -49,7 +49,7 @@ const Winnings = () => {
                     <li>Contact</li>
                 </ul>
                 <div className="nav-login-user">
-                    <FaCircleUser size={25} />
+                    <Link to='/MyAccount' className="user-nav"><FaCircleUser size={25} /></Link>  
                     
                     <div className="nav-icon" onClick={toggleMenu}>
                         <FaBars size={25} />
