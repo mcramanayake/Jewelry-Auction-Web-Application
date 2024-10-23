@@ -32,7 +32,7 @@ const Login = () => {
         if (result.status === 200) {
           alert(result.data.Message);
           localStorage.setItem('sessionId', result.data.userId);
-          navigate("/MyAccount");
+          navigate("/HomePage");
         }
       })
       .catch((error) => {
