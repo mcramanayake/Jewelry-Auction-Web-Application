@@ -15,36 +15,37 @@ const Login = () => {
   }
 
   const HandleLogin = (e) => {
-    e.preventDefault(); // Prevent form submission
+    e.preventDefault();
 
     const data = {
-        Email: Email,
-        Password: Password,
+      Email: Email,
+      Password: Password,
     };
 
-    const url = 'https://localhost:7137/api/Users/login';
-    axios
-        .post(url, data)
-        .then((result) => {
-            if (result.status === 200) {
-                console.log(result.data);
-                alert(result.data.Message); // Display login success message
-                navigate("/");
-                //backend eken gnn oyaa session id ekk user ge id eka ita passe methin eka save krgnn localstrge ekk vidht ethkot ussht lesi wei wd krgnn
-            }
-        })
-        .catch((error) => {
-            console.log(error); // Log the entire error object to the console
-            if (error.response) {
-                alert(`Error: ${error.response.data}`);
-            } else if (error.request) {
-                alert('Error: No response received from the server');
-            } else {
-                alert(`Error: ${error.message}`);
-            }
-        });
-};
+    const url = 'https://localhost:7137/api/Users/Login';
 
+    console.log('Attempting login with:', data); // Log the login attempt
+
+    axios.post(url, data)
+      .then((result) => {
+        console.log('Login result:', result); // Log the result
+        if (result.status === 200) {
+          alert(result.data.Message);
+          localStorage.setItem('sessionId', result.data.userId);
+          navigate("/HomePage");
+        }
+      })
+      .catch((error) => {
+        if (error.response) {
+          console.error('Error response:', error.response); // Log the entire response
+          alert(`Error: ${error.response.data.Message || 'An error occurred'}`);
+        } else if (error.request) {
+          alert('Error: No response received from the server');
+        } else {
+          alert(`Error: ${error.message}`);
+        }
+      });
+  };
 
   return (
     <div>
@@ -63,8 +64,10 @@ const Login = () => {
                 type="email"
                 placeholder='Email'
                 name="Email"
+                value={Email}
                 onChange={handleChange}
                 autoComplete="off"
+                required
               />
             </div>
             <div className="input">
@@ -72,14 +75,16 @@ const Login = () => {
                 type="password"
                 placeholder='Password'
                 name="Password"
+                value={Password}
                 onChange={handleChange}
                 autoComplete="off"
+                required
               />
             </div>
           </div>
           <div className="forgotPassword">Forgot your password?</div>
           <div className="submit-container">
-            <button type="button" className="submit" onClick={HandleLogin}>Log in</button>
+            <button type="submit" className="submit" onClick={HandleLogin}>Log in</button>
           </div>
           <div className="forgot-password">
             Not Registered? <span><Link to="/" className="btn">Register</Link></span> <Link to="/MyAccount"> Profile </Link>

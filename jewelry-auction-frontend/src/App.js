@@ -1,14 +1,66 @@
 // src/App.js
-import React, { useEffect, useState } from 'react';
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+//import React, { useEffect, useState } from 'react';
+//import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import LoginSignup from './components/LoginSignUp/LoginSignup';
+import Login from './components/LoginSignUp/Login';
+import {RouterProvider, createBrowserRouter} from "react-router-dom";
+import MyAccount from './components/Profile/MyAccount';
+import MyBids from './components/Profile/MyBids';
+import Payments from './components/Profile/Payments'; 
+import Winnings from './components/Profile/Winnings';
+import ErrorBoundary from './components/ErrorBoundary';
+import NotFound from './components/NotFound';
 import HomePage from './components/Admin&Home/HomePage';
 import AddItemPage from './components/Admin&Home/AddItemPage';
-import LoginPage from './components/LoginSignUp/Login';
-import SignupPage from './components/LoginSignUp/LoginSignup';
 import AdminDashboard from './components/Admin&Home/AdminDashboard';
 
 function App() {
-  const [user, setUser] = useState(null);
+
+  const route = createBrowserRouter ([
+    {
+      path:"/",
+      element:<LoginSignup />,
+    },
+    {
+      path:"/login",
+      element:<Login />,
+    },
+    {
+      path: "/MyAccount",
+      element: <MyAccount />,
+    },
+    {
+      path: "/MyBids",
+      element:<MyBids />
+    },
+    {
+      path: "/Payments",
+      element: <Payments />
+    },
+    {
+      path: "/Winnings",
+      element:<Winnings />
+    },
+    {
+      path: "/HomePage",
+      element:<HomePage />
+    },
+    {
+      path: "/AddItemPage",
+      element:<AddItemPage />
+    },
+    {
+      path: "/AdminDashboard",
+      element:<AdminDashboard />
+    },
+    {
+      path: "*", // This will catch all undefined routes
+      element: <NotFound />, // Render NotFound component for unknown routes
+    }
+  ]);
+
+
+ /* const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -24,10 +76,17 @@ function App() {
 
   const isAdmin = user?.role === 'admin';
 
-  if (loading) return <div>Loading...</div>;
+  if (loading) return <div>Loading...</div>; */
 
   return (
-    <Router>
+
+    <ErrorBoundary>
+      <div>
+        <RouterProvider router={route}></RouterProvider>
+      </div>
+    </ErrorBoundary>
+
+   /* <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<LoginPage setUser={setUser} />} />
@@ -37,7 +96,7 @@ function App() {
         <Route path="*" element={<Navigate to={user ? "/" : "/signup"} />} />
 
       </Routes>
-    </Router>
+    </Router> */
   );
 }
 

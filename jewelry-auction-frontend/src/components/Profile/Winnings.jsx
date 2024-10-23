@@ -1,17 +1,38 @@
-import React, { useState, useEffect, useRef, useMemo, useCallback, useContext} from 'react';
+import React, { useState, useRef,} from 'react';
 import './Winnings.css'
 import './Navbar.css'
 import { FaBars } from "react-icons/fa6";
 import { FaCircleUser } from "react-icons/fa6";
-import {Link} from "react-router-dom";
+import { Link} from "react-router-dom";
 
 const Winnings = () => {
 
     const navRef = useRef();
     const [isOpen, setIsOpen] = useState(false);
 
+
     const toggleMenu = () => {
         setIsOpen(!isOpen);
+    };
+
+    const handleDueClick = async (event) => {
+        event.preventDefault(); // Prevent default form submission
+        try {
+            const response = await fetch('https://localhost:7137/api/Payment', { // Adjust the URL if necessary
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({}), // Add any required payload
+            });
+            const session = await response.json();
+            if (session.url) {
+                // Redirect to the Stripe Checkout page
+                window.location.href = session.url;
+            }
+        } catch (error) {
+            console.error("Error creating checkout session:", error);
+        }
     };
 
     return (
@@ -19,7 +40,7 @@ const Winnings = () => {
             {/*Navbar*/}
             <div className='navbar'>
                 <div className="nav-logo">
-                    <p>The Auction Room</p>
+                    <p><Link to='/HomePage' className="logo-home">The Auction Room</Link></p>
                 </div>
                 <ul className={`nav-menu ${isOpen ? 'nav-menu-active' : ''}`}>
                     <li>Auctions</li>
@@ -28,7 +49,7 @@ const Winnings = () => {
                     <li>Contact</li>
                 </ul>
                 <div className="nav-login-user">
-                    <FaCircleUser size={25} />
+                    <Link to='/MyAccount' className="user-nav"><FaCircleUser size={25} /></Link>  
                     
                     <div className="nav-icon" onClick={toggleMenu}>
                         <FaBars size={25} />
@@ -70,19 +91,19 @@ const Winnings = () => {
                             <td>Gold Necklace Auction #45</td>
                             <td>Wed Sep 18 2024</td>
                             <td>US $750</td>
-                            <td><button className="paid-button">Paid</button></td>
+                            <td><button className="paid">Paid</button></td>
                         </tr>
                         <tr>
                             <td>Diamond Ring Auction #32</td>
                             <td>Fri Sep 20 2024</td>
                             <td>US $1200</td>
-                            <td><button className="due-button">Due</button></td>
+                            <td><button className="due" onClick={handleDueClick}>Due</button></td>
                         </tr>
                         <tr>
                             <td>Silver Bracelet Auction #29</td>
                             <td>Sun Sep 22 2024</td>
                             <td>US $350</td>
-                            <td><button className="paid-button">Paid</button></td>
+                            <td><button className="paid">Paid</button></td>
                         </tr>
                     </tbody>
                 </table>
