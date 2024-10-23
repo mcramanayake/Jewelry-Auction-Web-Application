@@ -1,8 +1,10 @@
 // src/components/HomePage.js
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import './HomePage.css';
 import { Link, useNavigate } from 'react-router-dom';
+import { FaBars, FaCircleUser } from 'react-icons/fa6';
+import { Link } from 'react-router-dom';
 
 const HomePage = () => {
   const [items, setItems] = useState([]);
