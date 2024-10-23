@@ -22,6 +22,13 @@ const Login = () => {
       Password: Password,
     };
 
+    // Check if it's the admin login
+    if (Email === 'admin@gmail.com' && Password === 'Admin123') {
+      // Navigate to AdminDashboard
+      navigate("/AdminDashboard");
+      return; // Stop further execution
+    }
+
     const url = 'https://localhost:7137/api/Users/Login';
 
     console.log('Attempting login with:', data); // Log the login attempt
