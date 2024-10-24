@@ -88,7 +88,7 @@ const HomePage = () => {
             </div>
 
    <div className="homepage">
-      <h1>Jewelry Auction</h1>
+      <h1 className="homeH1">Jewelry Auction</h1>
 
       {/* Navigation buttons */}
       {!user ? (

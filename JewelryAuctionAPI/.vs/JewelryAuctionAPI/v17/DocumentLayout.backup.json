@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{12CB2141-9952-4ADE-BBA4-4B8308038619}|JewelryAuctionAPI\\JewelryAuctionAPI.csproj|solutionrelative:jewelryauctionapi\\controllers\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{12CB2141-9952-4ADE-BBA4-4B8308038619}|JewelryAuctionAPI\\JewelryAuctionAPI.csproj|c:\\users\\senuki\\desktop\\react\\jewelry-auction-web-application\\jewelryauctionapi\\jewelryauctionapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12CB2141-9952-4ADE-BBA4-4B8308038619}|JewelryAuctionAPI\\JewelryAuctionAPI.csproj|solutionrelative:jewelryauctionapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{12CB2141-9952-4ADE-BBA4-4B8308038619}|JewelryAuctionAPI\\JewelryAuctionAPI.csproj|c:\\users\\senuki\\desktop\\react\\jewelry-auction-web-application\\jewelryauctionapi\\jewelryauctionapi\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{12CB2141-9952-4ADE-BBA4-4B8308038619}|JewelryAuctionAPI\\JewelryAuctionAPI.csproj|solutionrelative:jewelryauctionapi\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -25,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{12CB2141-9952-4ADE-BBA4-4B8308038619}|JewelryAuctionAPI\\JewelryAuctionAPI.csproj|c:\\users\\senuki\\desktop\\react\\jewelry-auction-web-application\\jewelryauctionapi\\jewelryauctionapi\\controllers\\auctioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{12CB2141-9952-4ADE-BBA4-4B8308038619}|JewelryAuctionAPI\\JewelryAuctionAPI.csproj|solutionrelative:jewelryauctionapi\\controllers\\auctioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12CB2141-9952-4ADE-BBA4-4B8308038619}|JewelryAuctionAPI\\JewelryAuctionAPI.csproj|c:\\users\\senuki\\desktop\\react\\jewelry-auction-web-application\\jewelryauctionapi\\jewelryauctionapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12CB2141-9952-4ADE-BBA4-4B8308038619}|JewelryAuctionAPI\\JewelryAuctionAPI.csproj|solutionrelative:jewelryauctionapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{12CB2141-9952-4ADE-BBA4-4B8308038619}|JewelryAuctionAPI\\JewelryAuctionAPI.csproj|c:\\users\\senuki\\desktop\\react\\jewelry-auction-web-application\\jewelryauctionapi\\jewelryauctionapi\\models\\settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -90,7 +90,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "PaymentController.cs",
               "DocumentMoniker": "C:\\Users\\Senuki\\Desktop\\React\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\Controllers\\PaymentController.cs",
               "RelativeDocumentMoniker": "JewelryAuctionAPI\\Controllers\\PaymentController.cs",
@@ -103,7 +103,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Login.cs",
               "DocumentMoniker": "C:\\Users\\Senuki\\Desktop\\React\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\Models\\Login.cs",
               "RelativeDocumentMoniker": "JewelryAuctionAPI\\Models\\Login.cs",
@@ -121,14 +121,14 @@
               "RelativeDocumentMoniker": "JewelryAuctionAPI\\Controllers\\users.cs",
               "ToolTip": "C:\\Users\\Senuki\\Desktop\\React\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\Controllers\\users.cs",
               "RelativeToolTip": "JewelryAuctionAPI\\Controllers\\users.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAswFQAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-21T10:59:55.156Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "AuctionContext.cs",
               "DocumentMoniker": "C:\\Users\\Senuki\\Desktop\\React\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\Data\\AuctionContext.cs",
               "RelativeDocumentMoniker": "JewelryAuctionAPI\\Data\\AuctionContext.cs",
@@ -140,15 +140,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Senuki\\Desktop\\React\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\Program.cs",
               "RelativeDocumentMoniker": "JewelryAuctionAPI\\Program.cs",
               "ToolTip": "C:\\Users\\Senuki\\Desktop\\React\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\Program.cs",
               "RelativeToolTip": "JewelryAuctionAPI\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T09:44:44.519Z"
+              "WhenOpened": "2024-10-06T09:44:44.519Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -176,7 +177,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "AuctionController.cs",
               "DocumentMoniker": "C:\\Users\\Senuki\\Desktop\\React\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\Controllers\\AuctionController.cs",
               "RelativeDocumentMoniker": "JewelryAuctionAPI\\Controllers\\AuctionController.cs",
@@ -200,7 +201,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Signup.cs",
               "DocumentMoniker": "C:\\Users\\Senuki\\Desktop\\React\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\Models\\Signup.cs",
               "RelativeDocumentMoniker": "JewelryAuctionAPI\\Models\\Signup.cs",
