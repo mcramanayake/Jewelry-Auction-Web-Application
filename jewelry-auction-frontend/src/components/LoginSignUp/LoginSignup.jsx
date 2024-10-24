@@ -42,17 +42,27 @@ const LoginSignup = () => {
                 }
             })
             .catch((error) => {
-                console.log(error); // Log the entire error object to the console
+                // Improved error handling
+                console.error(error); // Log the entire error object to the console
+
+                let errorMessage = 'An unknown error occurred';
                 if (error.response) {
                     // Server responded with an error status code
-                    alert(`Error: ${error.response.data}`);
+                    if (error.response.data) {
+                        // If there's a specific message from the server, use it
+                        errorMessage = error.response.data.message || error.response.data;
+                    } else {
+                        errorMessage = `Error: ${error.response.status} ${error.response.statusText}`;
+                    }
                 } else if (error.request) {
                     // Request was made but no response was received
-                    alert('Error: No response received from the server');
+                    errorMessage = 'Error: No response received from the server';
                 } else {
                     // Something happened in setting up the request
-                    alert(`Error: ${error.message}`);
+                    errorMessage = `Error: ${error.message}`;
                 }
+
+                alert(errorMessage); // Display the improved error message
             });
     }
 
