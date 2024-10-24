@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\M.C Ramanayake\\Documents\\GitHub\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\JewelryAuctionAPI.csproj": {}
+    "C:\\Users\\Senuki\\Desktop\\React\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\JewelryAuctionAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\M.C Ramanayake\\Documents\\GitHub\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\JewelryAuctionAPI.csproj": {
+    "C:\\Users\\Senuki\\Desktop\\React\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\JewelryAuctionAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\M.C Ramanayake\\Documents\\GitHub\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\JewelryAuctionAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Senuki\\Desktop\\React\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\JewelryAuctionAPI.csproj",
         "projectName": "JewelryAuctionAPI",
-        "projectPath": "C:\\Users\\M.C Ramanayake\\Documents\\GitHub\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\JewelryAuctionAPI.csproj",
-        "packagesPath": "C:\\Users\\M.C Ramanayake\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\M.C Ramanayake\\Documents\\GitHub\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\obj\\",
+        "projectPath": "C:\\Users\\Senuki\\Desktop\\React\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\JewelryAuctionAPI.csproj",
+        "packagesPath": "C:\\Users\\Senuki\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Senuki\\Desktop\\React\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\M.C Ramanayake\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Senuki\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -69,6 +69,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.8, )"
+            },
+            "Stripe.net": {
+              "target": "Package",
+              "version": "[46.2.1, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

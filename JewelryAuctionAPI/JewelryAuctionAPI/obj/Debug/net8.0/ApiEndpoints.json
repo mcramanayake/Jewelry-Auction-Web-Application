@@ -114,6 +114,32 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "JewelryAuctionAPI.Controllers.PaymentController",
+    "Method": "CreateCheckoutSession",
+    "RelativePath": "api/Payment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JewelryAuctionAPI.Controllers.profiledetails",
+    "Method": "GetProfileDetails",
+    "RelativePath": "api/profiledetails/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "JewelryAuctionAPI.Controllers.SettingsController",
     "Method": "GetMaintenanceStatus",
     "RelativePath": "api/Settings/status",
@@ -152,38 +178,6 @@
         "StatusCode": 200
       }
     ]
-  },
-  {
-    "ContainingType": "JewelryAuctionAPI.Controllers.Users",
-    "Method": "DeleteUser",
-    "RelativePath": "api/Users/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "JewelryAuctionAPI.Controllers.Users",
-    "Method": "MakeAdmin",
-    "RelativePath": "api/Users/{id}/makeAdmin",
-    "HttpMethod": "PATCH",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
   },
   {
     "ContainingType": "JewelryAuctionAPI.Controllers.Users",

@@ -9,7 +9,7 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
+.add-item-page h1 {
     text-align: center;
     color: #6432a8;
 }
@@ -24,14 +24,14 @@ label {
     font-weight: bold;
 }
 
-input, textarea {
+#name, #description{
     width: 100%;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
 }
 
-button {
+.add-item-btn {
     width: 100%;
     padding: 10px;
     background-color: #07ab33;
@@ -41,7 +41,7 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.add-item-btn:hover {
     background-color: #0c7224;
 }
 
