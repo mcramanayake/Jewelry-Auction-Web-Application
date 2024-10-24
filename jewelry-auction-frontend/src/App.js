@@ -13,6 +13,7 @@ import NotFound from './components/NotFound';
 import HomePage from './components/Admin&Home/HomePage';
 import AddItemPage from './components/Admin&Home/AddItemPage';
 import AdminDashboard from './components/Admin&Home/AdminDashboard';
+import SellWithUs from "./components/SellWithUs&ContactUs&AboutUs/SellWithUs";
 
 function App() {
 
@@ -52,6 +53,10 @@ function App() {
     {
       path: "/AdminDashboard",
       element:<AdminDashboard />
+    },
+    {
+      path:"/sell-with-us", 
+      element:<SellWithUs />
     },
     {
       path: "*", // This will catch all undefined routes
