@@ -5,7 +5,7 @@
     background-color: #f9f9f9;
 }
 
-.homepage h1 {
+.homeh1 {
     text-align: center;
     color: #6432a8; /* Your color theme */
 }
@@ -22,14 +22,43 @@
     border-radius: 5px;
 }
 
+/* Sort Options */
 .sort-options {
-    text-align: center;
-    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
 }
 
 .sort-options label {
-    margin-right: 10px;
+    margin-right: 15px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #6432a8;
 }
+
+.sort-options select {
+    padding: 10px 15px;
+    width: 200px;            /* Increased width of the dropdown */
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+}
+
+.sort-options select:focus {
+    border-color: #6432a8;
+    outline: none;
+    box-shadow: 0 0 8px rgba(100, 50, 168, 0.5);
+}
+
+.sort-options select:hover {
+    border-color: #888;
+}
+
+
 
 .items-container {
     display: flex;
@@ -88,3 +117,45 @@
     background-color: #502990;
 }
 
+
+
+
+/* Hero Section Styles */
+.hero {
+    position: relative;
+    height: 60vh;
+    background-image: url('../Assests/bgphoto2.jpeg'); /* Link to the background image */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    color: white; /* Text color to ensure readability */
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+/* Additional styles can be added below */

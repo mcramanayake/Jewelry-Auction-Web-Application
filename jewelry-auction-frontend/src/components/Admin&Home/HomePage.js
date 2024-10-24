@@ -1,4 +1,3 @@
-// src/components/HomePage.js
 import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import './HomePage.css';
@@ -57,66 +56,74 @@ const HomePage = () => {
     navigate('/'); // Redirect to homepage
   };
 
-  //responsive nav bar
+  // Responsive nav bar
   const navRef = useRef();
-    const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-    const toggleMenu = () => {
-        setIsOpen(!isOpen);
-    };
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
 
   return (
     <div>
-      {/*Navbar*/}
+      {/* Navbar */}
       <div className='navbar'>
-                <div className="nav-logo">
-                    <p><Link to='/HomePage' className="logo-home">The Auction Room</Link></p>
-                </div>
-                <ul className={`nav-menu ${isOpen ? 'nav-menu-active' : ''}`}>
-                    <li>Auctions</li>
-                    <li>Sell with us</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                </ul>
-                <div className="nav-login-user">
-                    <Link to='/MyAccount' className="user-nav"><FaCircleUser size={25} /></Link>  
-                    
-                    <div className="nav-icon" onClick={toggleMenu}>
-                        <FaBars size={25} />
-                    </div>
-                </div> 
-            </div>
-
-   <div className="homepage">
-      <h1>Jewelry Auction</h1>
-
-      {/* Navigation buttons */}
-      {!user ? (
-        <div>
-          <button onClick={() => navigate('/login')}>Login</button>
-          <button onClick={() => navigate('/signup')}>Sign Up</button>
+        <div className="nav-logo">
+          <p><Link to='/HomePage' className="logo-home">The Auction Room</Link></p>
         </div>
-      ) : (
-        <div>
-          {user.role === 'admin' && (
-            <button onClick={() => navigate('/admin')}>Admin Panel</button>
-          )}
-          <button onClick={() => navigate('/add-item')}>Add New Item</button>
-          <button onClick={handleLogout}>Logout</button> {/* Logout button */}
+        <ul className={`nav-menu ${isOpen ? 'nav-menu-active' : ''}`}>
+          <li>Auctions</li>
+          <li>Sell with us</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+        <div className="nav-login-user">
+          <Link to='/MyAccount' className="user-nav"><FaCircleUser size={25} /></Link>
+          <div className="nav-icon" onClick={toggleMenu}>
+            <FaBars size={25} />
+          </div>
         </div>
-      )}
-
-      {/* Search Bar */}
-      <div className="search-bar">
-        <input
-          type="text"
-          placeholder="Search for items..."
-          value={searchQuery}
-          onChange={handleSearchChange}
-        />
       </div>
 
-      {/* Sort Options */}
+      {/* Hero Section */}
+      <div className="hero">
+        <div className="hero-text">
+          <h1>THE BIGGEST <br /> MARKETPLACE</h1>
+          <p>
+            Explore our exclusive auctions and discover unique items <br />
+            at unbeatable prices. Join the community today <br />
+            and start bidding on your next treasure!
+          </p>
+          {/* Search Bar */}
+        <div className="search-bar">
+          <input
+            type="text"
+            placeholder="Search for items..."
+            value={searchQuery}
+            onChange={handleSearchChange}
+          />
+        </div>
+        </div>
+      </div>
+
+
+      <div className="homepage">
+        <h1 className="homeh1">Jewelry Auction</h1>
+
+        {/* User-specific buttons */}
+        {user && (
+          <div>
+            {user.role === 'admin' && (
+              <button onClick={() => navigate('/admin')}>Admin Panel</button>
+            )}
+            <button onClick={() => navigate('/add-item')}>Add New Item</button>
+            <button onClick={handleLogout}>Logout</button> {/* Logout button */}
+          </div>
+        )}
+
+        
+
+        {/* Sort Options */}
       <div className="sort-options">
         <label htmlFor="sort">Sort by:</label>
         <select id="sort" value={sortOption} onChange={handleSortChange}>
@@ -125,27 +132,29 @@ const HomePage = () => {
         </select>
       </div>
 
-      {/* Loading Spinner */}
-      {loading ? (
-        <div className="loading">Loading...</div>
-      ) : (
-        <div className="items-container">
-          {filteredItems.length > 0 ? (
-            filteredItems.map(item => (
-              <div key={item.id} className="auction-item">
-                <h2>{item.name}</h2>
-                <p>{item.description}</p>
-                <p>Starting Price: ${item.startingPrice}</p>
-                <button className="bid-button">Place Bid</button>
-              </div>
-            ))
-          ) : (
-            <p>No items available for auction.</p>
-          )}
-        </div>
-      )}
+
+
+        {/* Loading Spinner */}
+        {loading ? (
+          <div className="loading">Loading...</div>
+        ) : (
+          <div className="items-container">
+            {filteredItems.length > 0 ? (
+              filteredItems.map(item => (
+                <div key={item.id} className="auction-item">
+                  <h2>{item.name}</h2>
+                  <p>{item.description}</p>
+                  <p>Starting Price: ${item.startingPrice}</p>
+                  <button className="bid-button">Place Bid</button>
+                </div>
+              ))
+            ) : (
+              <p>No items available for auction.</p>
+            )}
+          </div>
+        )}
+      </div>
     </div>
-  </div>
   );
 };
 
