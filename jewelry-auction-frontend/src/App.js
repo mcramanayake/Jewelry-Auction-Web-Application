@@ -78,7 +78,7 @@ function App() {
 
   if (loading) return <div>Loading...</div>; */
 
-  const isAdmin = user?.role === 'admin';
+  //const isAdmin = user?.role === 'admin';
   
   return (
 
