@@ -13,6 +13,7 @@ import NotFound from './components/NotFound';
 import HomePage from './components/Admin&Home/HomePage';
 import AddItemPage from './components/Admin&Home/AddItemPage';
 import AdminDashboard from './components/Admin&Home/AdminDashboard';
+import ForgotPassword from './components/LoginSignUp/ForgotPassword';
 
 function App() {
 
@@ -52,6 +53,10 @@ function App() {
     {
       path: "/AdminDashboard",
       element:<AdminDashboard />
+    },
+    {
+      path: "/ForgotPassword",
+      element:<ForgotPassword />
     },
     {
       path: "*", // This will catch all undefined routes
