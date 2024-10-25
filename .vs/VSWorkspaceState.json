@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\JewelryAuctionAPI",
+    "\\JewelryAuctionAPI\\JewelryAuctionAPI",
+    "\\JewelryAuctionAPI\\JewelryAuctionAPI\\Controllers"
   ],
   "PreviewInSolutionExplorer": false
 }

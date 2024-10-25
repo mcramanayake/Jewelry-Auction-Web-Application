@@ -1,8 +1,9 @@
 // src/components/HomePage.js
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import './HomePage.css';
 import { Link, useNavigate } from 'react-router-dom';
+import { FaBars, FaCircleUser } from 'react-icons/fa6';
 
 const HomePage = () => {
   const [items, setItems] = useState([]);
@@ -56,9 +57,38 @@ const HomePage = () => {
     navigate('/'); // Redirect to homepage
   };
 
+  //responsive nav bar
+  const navRef = useRef();
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
+
   return (
-    <div className="homepage">
-      <h1>Jewelry Auction</h1>
+    <div>
+      {/*Navbar*/}
+      <div className='navbar'>
+                <div className="nav-logo">
+                    <p><Link to='/HomePage' className="logo-home">The Auction Room</Link></p>
+                </div>
+                <ul className={`nav-menu ${isOpen ? 'nav-menu-active' : ''}`}>
+                    <li>Auctions</li>
+                    <li>Sell with us</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+                <div className="nav-login-user">
+                    <Link to='/MyAccount' className="user-nav"><FaCircleUser size={25} /></Link>  
+                    
+                    <div className="nav-icon" onClick={toggleMenu}>
+                        <FaBars size={25} />
+                    </div>
+                </div> 
+            </div>
+
+   <div className="homepage">
+      <h1 className="homeH1">Jewelry Auction</h1>
 
       {/* Navigation buttons */}
       {!user ? (
@@ -115,6 +145,7 @@ const HomePage = () => {
         </div>
       )}
     </div>
+  </div>
   );
 };
 

@@ -1,0 +1,17 @@
+# Ignore VS-specific files
+.vs/
+
+# Ignore build files
+*.dll
+*.exe
+*.pdb
+/bin/
+/obj/
+
+# Ignore database files
+*.db
+*.db-shm
+*.db-wal
+
+# Ignore cache files
+node_modules/.cache/

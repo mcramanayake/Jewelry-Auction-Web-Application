@@ -49,6 +49,11 @@
     height: 20px;
 }
 
+.user-nav, .logo-home{
+    color: #fff;
+    text-decoration: none;
+}
+
 @media(max-width: 768px){
     .nav-icon {
         display: block;

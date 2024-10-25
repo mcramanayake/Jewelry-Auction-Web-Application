@@ -65,7 +65,7 @@ const AddItemPage = () => {
             required
           />
         </div>
-        <button type="submit">Add Item</button>
+        <button type="submit" className="add-item-btn">Add Item</button>
       </form>
     </div>
   );
