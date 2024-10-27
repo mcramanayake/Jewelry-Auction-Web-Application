@@ -2,30 +2,6 @@
   "version": 3,
   "targets": {
     "net8.0": {
-      "FluentEmail.Core/3.0.2": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/FluentEmail.Core.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/FluentEmail.Core.dll": {}
-        }
-      },
-      "FluentEmail.Smtp/3.0.2": {
-        "type": "package",
-        "dependencies": {
-          "FluentEmail.Core": "3.0.2"
-        },
-        "compile": {
-          "lib/netstandard2.0/FluentEmail.Smtp.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/FluentEmail.Smtp.dll": {}
-        }
-      },
       "Humanizer.Core/2.14.1": {
         "type": "package",
         "compile": {
@@ -683,12 +659,6 @@
           }
         }
       },
-      "MicrosoftWebMvc/2.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Mvc2Futures": "2.0.50217"
-        }
-      },
       "Mono.TextTemplating/2.2.1": {
         "type": "package",
         "dependencies": {
@@ -699,27 +669,6 @@
         },
         "runtime": {
           "lib/netstandard2.0/Mono.TextTemplating.dll": {}
-        }
-      },
-      "Mvc2Futures/2.0.50217": {
-        "type": "package",
-        "compile": {
-          "lib/Microsoft.Web.Mvc.dll": {}
-        },
-        "runtime": {
-          "lib/Microsoft.Web.Mvc.dll": {}
-        }
-      },
-      "MvcContrib/2.0.95": {
-        "type": "package",
-        "dependencies": {
-          "MicrosoftWebMvc": "2.0.0"
-        },
-        "compile": {
-          "lib/MvcContrib.dll": {}
-        },
-        "runtime": {
-          "lib/MvcContrib.dll": {}
         }
       },
       "Newtonsoft.Json/13.0.3": {
@@ -1287,32 +1236,6 @@
     }
   },
   "libraries": {
-    "FluentEmail.Core/3.0.2": {
-      "sha512": "uQFFbJgMhhCFUti7pfMi429fMNi7fLGMj+7uDtD7POlQzLxlhXJ6tmt4Y1SI51sZsA36GO5b7+o29eY/dKiICQ==",
-      "type": "package",
-      "path": "fluentemail.core/3.0.2",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "fluentemail.core.3.0.2.nupkg.sha512",
-        "fluentemail.core.nuspec",
-        "fluentemail_logo_64x64.png",
-        "lib/netstandard2.0/FluentEmail.Core.dll"
-      ]
-    },
-    "FluentEmail.Smtp/3.0.2": {
-      "sha512": "Y5pZKS/mXSl7D5WJWecvfo1kpIMDc6U0VRU6wRbE9wEv2IqMH3cQXa/97Pwi+m31COepIqc6dMhGMtAJ2Qh7rw==",
-      "type": "package",
-      "path": "fluentemail.smtp/3.0.2",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "fluentemail.smtp.3.0.2.nupkg.sha512",
-        "fluentemail.smtp.nuspec",
-        "fluentemail_logo_64x64.png",
-        "lib/netstandard2.0/FluentEmail.Smtp.dll"
-      ]
-    },
     "Humanizer.Core/2.14.1": {
       "sha512": "lQKvtaTDOXnoVJ20ibTuSIOf2i0uO0MPbDhd1jm238I+U/2ZnRENj0cktKZhtchBMtCUSRQ5v4xBCUbKNmyVMw==",
       "type": "package",
@@ -2636,17 +2559,6 @@
         "microsoft.openapi.nuspec"
       ]
     },
-    "MicrosoftWebMvc/2.0.0": {
-      "sha512": "WHtS0VfGs4f+YYUdd3fJVCrOPyR4xY8a4aGG4vfAXdRqyZ8pzatbwzbH4l+bdo7W5O50j/lO0Vt3relZJQQ8bw==",
-      "type": "package",
-      "path": "microsoftwebmvc/2.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "microsoftwebmvc.2.0.0.nupkg.sha512",
-        "microsoftwebmvc.nuspec"
-      ]
-    },
     "Mono.TextTemplating/2.2.1": {
       "sha512": "KZYeKBET/2Z0gY1WlTAK7+RHTl7GSbtvTLDXEZZojUdAPqpQNDL6tHv7VUpqfX5VEOh+uRGKaZXkuD253nEOBQ==",
       "type": "package",
@@ -2658,31 +2570,6 @@
         "lib/netstandard2.0/Mono.TextTemplating.dll",
         "mono.texttemplating.2.2.1.nupkg.sha512",
         "mono.texttemplating.nuspec"
-      ]
-    },
-    "Mvc2Futures/2.0.50217": {
-      "sha512": "90ilYxgj4s82mfgVegs6NujfBw5zbR49SlIWW/vtjRXu6Trdi9W1xh/LlHu6or47IeBI2AhGKsqnfm7HFCBBlA==",
-      "type": "package",
-      "path": "mvc2futures/2.0.50217",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/Microsoft.Web.Mvc.dll",
-        "mvc2futures.2.0.50217.nupkg.sha512",
-        "mvc2futures.nuspec"
-      ]
-    },
-    "MvcContrib/2.0.95": {
-      "sha512": "+vqMMmiGbn+rdFBGEo691A3aZr7OHUp3doXghpizilqbIYhZk49bnEI8hoZV4Apm/9tVx9epj1EbgCAK99W3+Q==",
-      "type": "package",
-      "path": "mvccontrib/2.0.95",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/MvcContrib.XML",
-        "lib/MvcContrib.dll",
-        "mvccontrib.2.0.95.nupkg.sha512",
-        "mvccontrib.nuspec"
       ]
     },
     "Newtonsoft.Json/13.0.3": {
@@ -3465,14 +3352,11 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "FluentEmail.Core >= 3.0.2",
-      "FluentEmail.Smtp >= 3.0.2",
       "Microsoft.AspNetCore.JsonPatch >= 8.0.8",
       "Microsoft.EntityFrameworkCore >= 8.0.8",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.8",
       "Microsoft.EntityFrameworkCore.Sqlite >= 8.0.8",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.8",
-      "MvcContrib >= 2.0.95",
       "Stripe.net >= 46.2.1",
       "Swashbuckle.AspNetCore >= 6.4.0"
     ]
@@ -3522,14 +3406,6 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
-          "FluentEmail.Core": {
-            "target": "Package",
-            "version": "[3.0.2, )"
-          },
-          "FluentEmail.Smtp": {
-            "target": "Package",
-            "version": "[3.0.2, )"
-          },
           "Microsoft.AspNetCore.JsonPatch": {
             "target": "Package",
             "version": "[8.0.8, )"
@@ -3553,10 +3429,6 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[8.0.8, )"
-          },
-          "MvcContrib": {
-            "target": "Package",
-            "version": "[2.0.95, )"
           },
           "Stripe.net": {
             "target": "Package",
@@ -3589,27 +3461,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Mvc2Futures 2.0.50217' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
-      "libraryId": "Mvc2Futures",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'MvcContrib 2.0.95' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
-      "libraryId": "MvcContrib",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    }
-  ]
+  }
 }

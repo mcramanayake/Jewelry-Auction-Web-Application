@@ -42,26 +42,25 @@ const LoginSignup = () => {
                 }
             })
             .catch((error) => {
-                // Improved error handling
-                console.error(error); // Log the entire error object to the console
-
-                let errorMessage = 'An unknown error occurred';
+                console.error("Error:", error);  // Log the entire error for debugging
+            
+                let errorMessage = "An unknown error occurred";
+            
                 if (error.response) {
                     // Server responded with an error status code
-                    if (error.response.data) {
-                        // If there's a specific message from the server, use it
-                        errorMessage = error.response.data.message || error.response.data;
+                    if (error.response.data && error.response.data.message) {
+                        errorMessage = error.response.data.message;
                     } else {
                         errorMessage = `Error: ${error.response.status} ${error.response.statusText}`;
                     }
                 } else if (error.request) {
-                    // Request was made but no response was received
-                    errorMessage = 'Error: No response received from the server';
+                    // Request was made but no response received
+                    errorMessage = "Error: No response received from the server";
                 } else {
-                    // Something happened in setting up the request
+                    // Error setting up the request
                     errorMessage = `Error: ${error.message}`;
                 }
-
+            
                 alert(errorMessage); // Display the improved error message
             });
     }

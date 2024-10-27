@@ -46,14 +46,6 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "FluentEmail.Core": {
-              "target": "Package",
-              "version": "[3.0.2, )"
-            },
-            "FluentEmail.Smtp": {
-              "target": "Package",
-              "version": "[3.0.2, )"
-            },
             "Microsoft.AspNetCore.JsonPatch": {
               "target": "Package",
               "version": "[8.0.8, )"
@@ -77,10 +69,6 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.8, )"
-            },
-            "MvcContrib": {
-              "target": "Package",
-              "version": "[2.0.95, )"
             },
             "Stripe.net": {
               "target": "Package",
