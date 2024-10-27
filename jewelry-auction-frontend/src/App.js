@@ -13,7 +13,9 @@ import NotFound from './components/NotFound';
 import HomePage from './components/Admin&Home/HomePage';
 import AddItemPage from './components/Admin&Home/AddItemPage';
 import AdminDashboard from './components/Admin&Home/AdminDashboard';
-import ForgotPassword from './components/LoginSignUp/ForgotPassword';
+import SellWithUs from "./components/SellWithUs&ContactUs&AboutUs/SellWithUs";
+import Contact from "./components/SellWithUs&ContactUs&AboutUs/Contact";
+import AboutUs from "./components/SellWithUs&ContactUs&AboutUs/AboutUs";
 
 function App() {
 
@@ -55,8 +57,16 @@ function App() {
       element:<AdminDashboard />
     },
     {
-      path: "/ForgotPassword",
-      element:<ForgotPassword />
+      path:"/sell-with-us", 
+      element:<SellWithUs />
+    },
+    {
+      path:"/contact-us", 
+      element:<Contact />
+    },
+    {
+      path:"/aboutus", 
+      element:<AboutUs />
     },
     {
       path: "*", // This will catch all undefined routes
@@ -83,7 +93,7 @@ function App() {
 
   if (loading) return <div>Loading...</div>; */
 
-  //const isAdmin = user?.role === 'admin';
+  const isAdmin = user?.role === 'admin';
   
   return (
 

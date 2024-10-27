@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Senuki\\Desktop\\React\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\JewelryAuctionAPI.csproj": {}
+    "C:\\Users\\hp\\Pictures\\Final\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\JewelryAuctionAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Senuki\\Desktop\\React\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\JewelryAuctionAPI.csproj": {
+    "C:\\Users\\hp\\Pictures\\Final\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\JewelryAuctionAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Senuki\\Desktop\\React\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\JewelryAuctionAPI.csproj",
+        "projectUniqueName": "C:\\Users\\hp\\Pictures\\Final\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\JewelryAuctionAPI.csproj",
         "projectName": "JewelryAuctionAPI",
-        "projectPath": "C:\\Users\\Senuki\\Desktop\\React\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\JewelryAuctionAPI.csproj",
-        "packagesPath": "C:\\Users\\Senuki\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Senuki\\Desktop\\React\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\obj\\",
+        "projectPath": "C:\\Users\\hp\\Pictures\\Final\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\JewelryAuctionAPI.csproj",
+        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hp\\Pictures\\Final\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Senuki\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -46,27 +50,23 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "FluentEmail.Core": {
-              "target": "Package",
-              "version": "[3.0.2, )"
-            },
-            "FluentEmail.Smtp": {
-              "target": "Package",
-              "version": "[3.0.2, )"
-            },
             "Microsoft.AspNetCore.JsonPatch": {
               "target": "Package",
               "version": "[8.0.8, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.8, )"
+              "version": "[8.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
@@ -77,10 +77,6 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.8, )"
-            },
-            "MvcContrib": {
-              "target": "Package",
-              "version": "[2.0.95, )"
             },
             "Stripe.net": {
               "target": "Package",
@@ -110,7 +106,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
