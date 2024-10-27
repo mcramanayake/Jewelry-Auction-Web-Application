@@ -85,7 +85,7 @@ namespace JewelryAuctionAPI.Controllers
                 return Unauthorized("Invalid email or password");
             }
 
-            return Ok(new { Message = "Login successful" });
+            return Ok(new { Message = "Login successful",userId = user.Id });
         }
 
     }

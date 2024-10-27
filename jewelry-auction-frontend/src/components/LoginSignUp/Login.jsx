@@ -35,16 +35,17 @@ const Login = () => {
 
     axios.post(url, data)
       .then((result) => {
-        console.log('Login result:', result); // Log the result
+        console.log('Full login response:', result); // Log the full response
+        
         if (result.status === 200) {
-          alert(result.data.Message);
-          localStorage.setItem('sessionId', result.data.userId);
+          alert(result.data.Message);  // Access result.data.Message
+          localStorage.setItem('sessionId', result.data.userId); // Access result.data.userId if present
           navigate("/HomePage");
         }
       })
       .catch((error) => {
         if (error.response) {
-          console.error('Error response:', error.response); // Log the entire response
+          console.error('Error response:', error.response); // Log error details
           alert(`Error: ${error.response.data.Message || 'An error occurred'}`);
         } else if (error.request) {
           alert('Error: No response received from the server');
@@ -52,7 +53,7 @@ const Login = () => {
           alert(`Error: ${error.message}`);
         }
       });
-  };
+    };
 
   return (
     <div>

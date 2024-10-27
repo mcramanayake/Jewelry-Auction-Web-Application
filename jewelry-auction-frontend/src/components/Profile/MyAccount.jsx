@@ -4,7 +4,7 @@ import './Navbar.css';
 import { FaBars, FaCircleUser } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
 
-const API_URL = 'https://localhost:7137/api/profiledetails'; // Updated API URL
+const API_URL = 'https://localhost:7137/api/profiledetails/{id}'; // Updated API URL
 
 const MyAccount = () => {
     const navRef = useRef();
