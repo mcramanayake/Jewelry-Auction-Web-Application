@@ -43,9 +43,9 @@ const Payments = () => {
                 </div>
                 <ul className={`nav-menu ${isOpen ? 'nav-menu-active' : ''}`}>
                     <li>Auctions</li>
-                    <li>Sell with us</li>
-                    <li>About</li>
-                    <li>Contact</li>
+                    <li><Link to='/sell-with-us' className="user-nav">Sell with us</Link></li>
+                    <li><Link to='/aboutus' className="user-nav">About</Link></li>
+                    <li><Link to='/contact-us' className="user-nav">Contact</Link></li>
                 </ul>
                 <div className="nav-login-user">
                     <Link to='/MyAccount' className="user-nav"><FaCircleUser size={25} /></Link>  
