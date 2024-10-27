@@ -3,6 +3,7 @@ using System;
 using JewelryAuctionAPI.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace JewelryAuctionAPI.Migrations
 {
     [DbContext(typeof(AuctionContext))]
-    partial class AuctionContextModelSnapshot : ModelSnapshot
+    [Migration("20241027061012_AddAboutTable")]
+    partial class AddAboutTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.10");
@@ -66,31 +69,6 @@ namespace JewelryAuctionAPI.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("AboutTable");
-                });
-
-            modelBuilder.Entity("JewelryAuctionAPI.Models.SellWithUsItem", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("FilePath")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("ItemName")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Message")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<decimal>("Price")
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("SellWithUsTable");
                 });
 
             modelBuilder.Entity("JewelryAuctionAPI.Models.Settings", b =>
