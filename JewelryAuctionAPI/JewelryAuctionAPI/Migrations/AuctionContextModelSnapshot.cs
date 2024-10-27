@@ -15,7 +15,7 @@ namespace JewelryAuctionAPI.Migrations
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
-            modelBuilder.HasAnnotation("ProductVersion", "8.0.8");
+            modelBuilder.HasAnnotation("ProductVersion", "8.0.10");
 
             modelBuilder.Entity("JewelryAuctionAPI.Models.AuctionItem", b =>
                 {
@@ -42,6 +42,57 @@ namespace JewelryAuctionAPI.Migrations
                     b.ToTable("AuctionItems");
                 });
 
+            modelBuilder.Entity("JewelryAuctionAPI.Models.ContactMessage", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("DateSubmitted")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Message")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("AboutTable");
+                });
+
+            modelBuilder.Entity("JewelryAuctionAPI.Models.SellWithUsItem", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("FilePath")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("ItemName")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Message")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("SellWithUsTable");
+                });
+
             modelBuilder.Entity("JewelryAuctionAPI.Models.Settings", b =>
                 {
                     b.Property<int>("Id")
@@ -56,13 +107,25 @@ namespace JewelryAuctionAPI.Migrations
                     b.ToTable("Settings");
                 });
 
-            modelBuilder.Entity("JewelryAuctionAPI.Models.User", b =>
+            modelBuilder.Entity("JewelryAuctionAPI.Models.Signup", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("PasswordHash")
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Password")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
@@ -70,13 +133,9 @@ namespace JewelryAuctionAPI.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("Username")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
                     b.HasKey("Id");
 
-                    b.ToTable("Users");
+                    b.ToTable("Signups");
                 });
 #pragma warning restore 612, 618
         }
