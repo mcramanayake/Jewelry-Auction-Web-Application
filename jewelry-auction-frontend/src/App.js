@@ -93,7 +93,11 @@ function App() {
 
   if (loading) return <div>Loading...</div>; */
 
+<<<<<<< Updated upstream
   //const isAdmin = user?.role === 'admin';
+=======
+ // const isAdmin = user?.role === 'admin';
+>>>>>>> Stashed changes
   
   return (
 

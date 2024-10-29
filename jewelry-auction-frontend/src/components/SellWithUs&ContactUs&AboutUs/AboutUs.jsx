@@ -41,8 +41,8 @@ export default function AboutUs() {
       <div class="container pt-7">
         <div className="about-row">
           <div className="about-col">
-            <h1>Our Mission</h1>
-            <p>
+            <h1 className="aboutH1">Our Mission</h1>
+            <p className="aboutP">
               At Jewellery Auction, we’re more than just an auction site; we’re
               a trusted destination for jewellery lovers and collectors.
               Specializing in fine, unique, and luxury pieces, we’re dedicated

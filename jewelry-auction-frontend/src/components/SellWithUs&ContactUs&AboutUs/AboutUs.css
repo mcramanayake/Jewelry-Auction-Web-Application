@@ -1,12 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
 .image-container {
   position: relative;
   width: 100%;
@@ -51,7 +44,7 @@
   margin-bottom: -20px;
 }
 /* Center align the h1 elements */
-h1 {
+.aboutH1 {
   text-align: center;
   font-size: 2.5rem; /* Adjust as needed */
   font-weight: bold; /* Adjust weight as needed */
@@ -60,7 +53,7 @@ h1 {
 }
 
 /* Left-align the paragraph elements */
-p {
+.aboutP {
   text-align: left;
   font-size: 1rem; /* Adjust font size as needed */
   line-height: 1.6; /* Line height for better readability */

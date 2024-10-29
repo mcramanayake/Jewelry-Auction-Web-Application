@@ -136,7 +136,7 @@ export default class Contact extends Component {
           </div>
 
           <div className="right-section">
-            <form onSubmit={this.handleSubmit}>
+            <form onSubmit={this.handleSubmit} className="ContactForm">
               <div className="form-group">
                 <label htmlFor="name">Name</label>
                 <input
