@@ -197,7 +197,7 @@
   
   
   /* Form Styling */
-  form {
+  .ContactForm {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -208,14 +208,14 @@
     flex-direction: column;
   }
   
-  label {
+  .form-group label {
     font-weight: bold;
     margin-bottom: 5px;
     text-align: left;
     padding-left: 5px;
   }
   
-  input, textarea {
+  .form-group input,.form-group textarea {
     padding: 10px;
     font-size: 1rem;
     border: 1px solid #ccc;
@@ -224,7 +224,7 @@
     box-sizing: border-box;
   }
   
-  textarea {
+  .form-group textarea {
     height: 100px;
   }
   
@@ -244,16 +244,16 @@
   
   /* Mobile and Tablet Adjustments */
   @media (max-width: 768px) {
-    form {
+    .ContactForm {
       gap: 10px;
     }
   
-    input, textarea {
+    .form-group input,.form-group textarea {
       font-size: 0.95rem;
       padding: 10px;
     }
   
-    button {
+    .buttons {
       font-size: 1rem;
       padding: 10px;
     }
@@ -261,12 +261,12 @@
   
   /* Extra small devices */
   @media (max-width: 480px) {
-    input, textarea {
+    .form-group input,.form-group textarea {
       font-size: 0.9rem;
       padding: 8px;
     }
   
-    button {
+    .buttons {
       font-size: 0.95rem;
       padding: 10px;
     }
