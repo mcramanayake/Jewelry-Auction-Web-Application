@@ -1,4 +1,4 @@
-﻿using JewelryAuctionAPI.Models;
+using JewelryAuctionAPI.Models;
 using Microsoft.AspNetCore.Mvc;
 using JewelryAuctionAPI.Data;
 using Microsoft.EntityFrameworkCore;
@@ -27,13 +27,26 @@ namespace JewelryAuctionAPI.Controllers
             return await _context.AuctionItems.ToListAsync();
         }
 
+        // GET: api/Auction/{id}
+        [HttpGet("{id}")]
+        public async Task<ActionResult<AuctionItem>> GetItem(int id)
+        {
+            var item = await _context.AuctionItems.FindAsync(id);
+            if (item == null)
+            {
+                return NotFound();
+            }
+
+            return item;
+        }
+
         // POST: api/Auction
         [HttpPost]
         public async Task<ActionResult<AuctionItem>> AddItem(AuctionItem item)
         {
             _context.AuctionItems.Add(item);
             await _context.SaveChangesAsync();
-            return CreatedAtAction(nameof(GetItems), new { id = item.Id }, item);
+            return CreatedAtAction(nameof(GetItem), new { id = item.Id }, item);
         }
 
         // PUT: api/Auction/{id}
@@ -123,14 +136,12 @@ namespace JewelryAuctionAPI.Controllers
         [HttpPatch("toggleMaintenance")]
         public async Task<IActionResult> ToggleMaintenance()
         {
-            // Assume we have a Settings table or similar to store maintenance mode
-            var setting = await _context.Settings.FirstOrDefaultAsync(); // Fetch the settings
+            var setting = await _context.Settings.FirstOrDefaultAsync();
             if (setting == null)
             {
                 return NotFound("Settings not found.");
             }
 
-            // Toggle maintenance mode
             setting.IsMaintenanceMode = !setting.IsMaintenanceMode;
             await _context.SaveChangesAsync();
 
