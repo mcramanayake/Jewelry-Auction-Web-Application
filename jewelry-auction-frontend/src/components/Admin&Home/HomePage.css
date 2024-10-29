@@ -148,7 +148,7 @@
     background-size: cover; /* Ensure the image covers the entire section */
     background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Prevent the image from repeating */
-    color: white; /* Text color to ensure readability */
+    color: white;
 }
 
 .hero-text {
