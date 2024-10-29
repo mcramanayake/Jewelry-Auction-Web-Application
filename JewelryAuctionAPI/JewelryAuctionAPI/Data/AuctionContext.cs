@@ -1,4 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using JewelryAuctionAPI.Models;
 
 namespace JewelryAuctionAPI.Data
@@ -11,6 +11,7 @@ namespace JewelryAuctionAPI.Data
         public DbSet<AuctionItem> AuctionItems { get; set; }
         public DbSet<Settings> Settings { get; set; }
         public DbSet<Signup> Signups { get; set; }
+        public DbSet<Bid> Bids { get; set; }
         public object AboutTable { get; internal set; }
     }
 }
