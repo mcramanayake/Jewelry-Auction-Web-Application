@@ -1,11 +1,10 @@
-/* src/components/HomePage.css */
 .homepage {
     padding: 20px;
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
 }
 
-.homepH1 {
+.homeh1 {
     text-align: center;
     color: #6432a8; /* Your color theme */
 }
@@ -72,7 +71,7 @@
     color: #333;
 }
 
-/* src/components/HomePage.css */
+/* Add Item Link Styles */
 .add-item-link {
     display: inline-block;
     margin: 20px auto;
@@ -88,3 +87,34 @@
     background-color: #502990;
 }
 
+/* Hero Section Styles */
+.hero {
+    position: relative;
+    height: 60vh;
+    background-image: url('../Assests/bgphoto2.jpeg'); /* Link to the background image */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    color: white; /* Text color to ensure readability */
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.heroH1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.heroP {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+/* Additional styles can be added below */
