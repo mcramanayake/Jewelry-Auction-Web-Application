@@ -65,7 +65,7 @@ const HomePage = () => {
           <p><Link to='/HomePage' className="logo-home">The Auction Room</Link></p>
         </div>
         <ul className={`nav-menu ${isOpen ? 'nav-menu-active' : ''}`}>
-          <li>Auctions</li>
+          <li><Link to='/Auction' className="user-nav">Auctions</Link></li>
           <li><Link to='/sell-with-us' className="user-nav">Sell with us</Link></li>
           <li><Link to='/aboutus' className="user-nav">About</Link></li>
           <li><Link to='/contact-us' className="user-nav">Contact</Link></li>

@@ -16,6 +16,7 @@ import AdminDashboard from './components/Admin&Home/AdminDashboard';
 import SellWithUs from "./components/SellWithUs&ContactUs&AboutUs/SellWithUs";
 import Contact from "./components/SellWithUs&ContactUs&AboutUs/Contact";
 import AboutUs from "./components/SellWithUs&ContactUs&AboutUs/AboutUs";
+import Auction from "./components/Auctions/Auctions";
 
 function App() {
 
@@ -67,6 +68,10 @@ function App() {
     {
       path:"/aboutus", 
       element:<AboutUs />
+    },
+    {
+      path:"/Auction", 
+      element:<Auction />
     },
     {
       path: "*", // This will catch all undefined routes

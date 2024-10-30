@@ -357,5 +357,21 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "JewelryAuctionAPI.Controllers.profiledetails",
+    "Method": "UpdateUserDetails",
+    "RelativePath": "update",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userDetails",
+        "Type": "JewelryAuctionAPI.Models.UserDetails",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]
