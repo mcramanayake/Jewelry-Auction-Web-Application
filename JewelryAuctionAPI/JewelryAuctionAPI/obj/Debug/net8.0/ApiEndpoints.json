@@ -359,7 +359,7 @@
     ]
   },
   {
-    "ContainingType": "JewelryAuctionAPI.Controllers.profiledetails",
+    "ContainingType": "JewelryAuctionAPI.Controllers.UserDetailsUpdate",
     "Method": "UpdateUserDetails",
     "RelativePath": "update",
     "HttpMethod": "POST",

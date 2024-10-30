@@ -83,13 +83,11 @@ const MyAccount = () => {
         try {
             const sessionId = localStorage.getItem('sessionId'); // Check this value
             console.log(sessionId);
-            const response = await fetch(`https://localhost:7137/api/profiledetails/update`, {
+            const response = await fetch(`https://localhost:7137/api/UserDetailsUpdate/update`, {
                 method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
+                headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
-                    Id: userData.id, // Set the Id from the Signups table
+                    Id: userData.id,
                     PhoneNumber: formData.PhoneNumber,
                     Address: formData.Address,
                     City: formData.City,
