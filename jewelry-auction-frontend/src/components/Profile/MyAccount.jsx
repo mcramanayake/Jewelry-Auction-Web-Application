@@ -81,13 +81,12 @@ const MyAccount = () => {
         e.preventDefault();
         setLoading(true);
         try {
-            const sessionId = localStorage.getItem('sessionId'); // Get sessionId from localStorage
-            console.log(sessionId);
-            const response = await fetch(`https://localhost:7137/api/UserDetailsUpdate/update`, {
+            const sessionId = localStorage.getItem('sessionId');
+            const response = await fetch(`https://localhost:7137/api/profiledetails/insert`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
-                    Id: userData.id, // User ID from backend
+                    Id: sessionId, // ID for linking with UserDetails table
                     PhoneNumber: formData.PhoneNumber,
                     Address: formData.Address,
                     City: formData.City,
@@ -96,10 +95,10 @@ const MyAccount = () => {
             });
 
             if (!response.ok) {
-                throw new Error('Failed to update details');
+                throw new Error('Failed to insert details');
             }
 
-            alert('Details updated successfully!');
+            alert('Details inserted successfully!');
         } catch (err) {
             alert(err.message);
         } finally {

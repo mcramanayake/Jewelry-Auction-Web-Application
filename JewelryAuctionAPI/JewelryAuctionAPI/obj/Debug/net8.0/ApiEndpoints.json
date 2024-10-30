@@ -375,6 +375,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "JewelryAuctionAPI.Controllers.profiledetails",
+    "Method": "InsertUserDetails",
+    "RelativePath": "api/profiledetails/insert",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "JewelryAuctionAPI.Models.UserDetails",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "JewelryAuctionAPI.Controllers.SellWithUsController",
     "Method": "GetSellWithUsItems",
     "RelativePath": "api/SellWithUs",
@@ -507,7 +523,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "model",
+        "Name": "userDetails",
         "Type": "JewelryAuctionAPI.Models.UserDetails",
         "IsRequired": true
       }
