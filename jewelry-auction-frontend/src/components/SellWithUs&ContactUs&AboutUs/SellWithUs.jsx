@@ -102,7 +102,11 @@ export default class SellWithUs extends Component {
             </p>
           </div>
           <ul className={`nav-menu ${isOpen ? 'nav-menu-active' : ''}`}>
-            <li>Auctions</li>
+          <li>
+                        <Link to="/Auctions" className="user-nav">
+                            Auctions
+                        </Link>
+                    </li>
             <li>
               <Link to="/sell-with-us" className="user-nav">
                 Sell with us
