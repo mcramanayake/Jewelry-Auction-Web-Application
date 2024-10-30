@@ -38,9 +38,14 @@ const Login = () => {
         console.log('Full login response:', result); // Log the full response
         
         if (result.status === 200) {
-          alert(result.data.Message);  // Access result.data.Message
+          const { Message, userId, role } = result.data;
           localStorage.setItem('sessionId', result.data.userId); // Access result.data.userId if present
-          navigate("/HomePage");
+          // Navigate based on the role
+          if (role === 'admin') {
+            navigate("/AdminDashboard");
+          } else {
+            navigate("/HomePage");
+          }
         }
       })
       .catch((error) => {

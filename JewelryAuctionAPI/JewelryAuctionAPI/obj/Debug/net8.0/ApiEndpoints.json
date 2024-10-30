@@ -507,7 +507,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "userDetails",
+        "Name": "model",
         "Type": "JewelryAuctionAPI.Models.UserDetails",
         "IsRequired": true
       }
