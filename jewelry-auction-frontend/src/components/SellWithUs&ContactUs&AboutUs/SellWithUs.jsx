@@ -9,15 +9,17 @@ export default class SellWithUs extends Component {
     itemName: "",
     price: 0,
     message: "",
-    filePath: "",
+    filePath: "", // This will hold the image URL
     errors: {},
     isOpen: false, // Added state for menu toggle
   };
 
+  // Toggle menu for responsive design
   toggleMenu = () => {
     this.setState((prevState) => ({ isOpen: !prevState.isOpen }));
   };
 
+  // Handle text input change and validate fields
   handleInputChange = (e) => {
     const { name, value } = e.target;
     this.setState({ [name]: value }, () => {
@@ -25,25 +27,17 @@ export default class SellWithUs extends Component {
     });
   };
 
-  validateField = (name, value) => {
-    let errors = this.state.errors;
-
-    // Example validation logic
-    if (name === "itemName" && value.length < 3) {
-      errors.itemName = "Item name must be at least 3 characters long.";
-    } else {
-      errors.itemName = "";
+  // Handle file selection and set the file path URL
+  handleFileChange = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      const IMAGE_BASE_URL = "http://localhost:3000/images/"; // Adjust to your local server URL
+      const fileUrl = `${IMAGE_BASE_URL}${file.name}`;
+      this.setState({ filePath: fileUrl });
     }
-
-    if (name === "price" && value <= 0) {
-      errors.price = "Price must be greater than 0.";
-    } else {
-      errors.price = "";
-    }
-
-    this.setState({ errors });
   };
 
+  // Handle form submission
   handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -77,6 +71,26 @@ export default class SellWithUs extends Component {
     }
   };
 
+  // Validate individual fields
+  validateField = (name, value) => {
+    let errors = this.state.errors;
+
+    if (name === "itemName" && value.length < 3) {
+      errors.itemName = "Item name must be at least 3 characters long.";
+    } else {
+      errors.itemName = "";
+    }
+
+    if (name === "price" && value <= 0) {
+      errors.price = "Price must be greater than 0.";
+    } else {
+      errors.price = "";
+    }
+
+    this.setState({ errors });
+  };
+
+  // Check if the form is valid
   isFormValid = () => {
     const { itemName, price, message, errors } = this.state;
     return (
@@ -92,7 +106,7 @@ export default class SellWithUs extends Component {
 
     return (
       <div>
-        {/*Navbar*/}
+        {/* Navbar */}
         <div className="navbar">
           <div className="nav-logo">
             <p>
@@ -102,43 +116,33 @@ export default class SellWithUs extends Component {
             </p>
           </div>
           <ul className={`nav-menu ${isOpen ? 'nav-menu-active' : ''}`}>
-          <li>
-                        <Link to="/Auctions" className="user-nav">
-                            Auctions
-                        </Link>
-                    </li>
             <li>
-              <Link to="/sell-with-us" className="user-nav">
-                Sell with us
-              </Link>
+              <Link to="/Auctions" className="user-nav">Auctions</Link>
             </li>
             <li>
-              <Link to="/aboutus" className="user-nav">
-                About
-              </Link>
+              <Link to="/sell-with-us" className="user-nav">Sell with us</Link>
             </li>
             <li>
-              <Link to="/contact-us" className="user-nav">
-                Contact
-              </Link>
+              <Link to="/aboutus" className="user-nav">About</Link>
+            </li>
+            <li>
+              <Link to="/contact-us" className="user-nav">Contact</Link>
             </li>
           </ul>
           <div className="nav-login-user">
             <Link to="/MyAccount" className="user-nav">
               <FaCircleUser size={25} />
             </Link>
-
             <div className="nav-icon" onClick={this.toggleMenu}>
               <FaBars size={25} />
             </div>
           </div>
         </div>
 
+        {/* Sell With Us Section */}
         <div className="sell-with-us-section">
-                <h1>Sell With Us</h1>
+          <h1>Sell With Us</h1>
         </div>
-
-
 
         <div className="responsive-paragraph">
           <span className="xyz">
@@ -146,6 +150,7 @@ export default class SellWithUs extends Component {
           </span>
         </div>
 
+        {/* Form Section */}
         <section className="contact">
           <form onSubmit={this.handleSubmit}>
             <div className="form-group-row">
@@ -199,36 +204,34 @@ export default class SellWithUs extends Component {
             </div>
 
             <div>
-              <button type="submit" className="sellWithUs-button">
-                Send
-              </button>
+              <button type="submit" className="sellWithUs-button">Send</button>
             </div>
           </form>
         </section>
-        <br />
+
         {/* Footer */}
         <div className="footer">
-                <div className="first">
-                    <h1>The Auction Room</h1>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                </div>
-                <div className="second">
-                    <ul>
-                        <li>Auctions</li>
-                        <li>Past Auctions</li>
-                        <li>Profile</li>
-                        <li>Sell with us</li>
-                    </ul>
-                </div>
-                <div className="third">
-                    <ul>
-                        <li>About</li>
-                        <li>Contact</li>
-                        <li>Terms & Conditions</li>
-                        <li>Privacy Policy</li>
-                    </ul>
-                </div>
-            </div>
+          <div className="first">
+            <h1>The Auction Room</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          </div>
+          <div className="second">
+            <ul>
+              <li>Auctions</li>
+              <li>Past Auctions</li>
+              <li>Profile</li>
+              <li>Sell with us</li>
+            </ul>
+          </div>
+          <div className="third">
+            <ul>
+              <li>About</li>
+              <li>Contact</li>
+              <li>Terms & Conditions</li>
+              <li>Privacy Policy</li>
+            </ul>
+          </div>
+        </div>
       </div>
     );
   }

@@ -22,11 +22,7 @@ namespace JewelryAuctionAPI.Controllers
         {
             if (!ModelState.IsValid) return BadRequest(ModelState);
 
-            // Initialize LatestPrice to Price if needed
-            item.LatestPrice = (float)item.Price;
-
-            // Uncomment and ensure SellWithUsTable is configured in the context
-            // _context.SellWithUsTable.Add(item);
+            _context.SellWithUsTable.Add(item);
             await _context.SaveChangesAsync();
 
             return Ok(new { success = true, message = "Item submitted successfully!" });

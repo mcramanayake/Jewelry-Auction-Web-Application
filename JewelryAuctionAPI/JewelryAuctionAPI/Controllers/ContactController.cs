@@ -20,7 +20,7 @@ namespace JewelryAuctionAPI.Controllers
         {
             if (!ModelState.IsValid) return BadRequest(ModelState);
 
-           // _context.AboutTable.Add(message);
+           _context.AboutTable.Add(message);
             await _context.SaveChangesAsync();
 
             return Ok(new { success = true, message = "Message submitted successfully!" });
