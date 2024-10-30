@@ -5330,19 +5330,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Senuki\\.nuget\\packages\\": {}
+    "C:\\Users\\M.C Ramanayake\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Senuki\\Desktop\\Projects\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\JewelryAuctionAPI.csproj",
+      "projectUniqueName": "C:\\Users\\M.C Ramanayake\\Documents\\GitHub\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\JewelryAuctionAPI.csproj",
       "projectName": "JewelryAuctionAPI",
-      "projectPath": "C:\\Users\\Senuki\\Desktop\\Projects\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\JewelryAuctionAPI.csproj",
-      "packagesPath": "C:\\Users\\Senuki\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Senuki\\Desktop\\Projects\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\obj\\",
+      "projectPath": "C:\\Users\\M.C Ramanayake\\Documents\\GitHub\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\JewelryAuctionAPI.csproj",
+      "packagesPath": "C:\\Users\\M.C Ramanayake\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\M.C Ramanayake\\Documents\\GitHub\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Senuki\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\M.C Ramanayake\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

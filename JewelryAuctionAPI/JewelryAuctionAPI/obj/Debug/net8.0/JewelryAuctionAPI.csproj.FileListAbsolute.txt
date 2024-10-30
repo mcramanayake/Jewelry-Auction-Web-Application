@@ -1211,3 +1211,11 @@ C:\Users\Senuki\Desktop\Projects\Jewelry-Auction-Web-Application\JewelryAuctionA
 C:\Users\Senuki\Desktop\Projects\Jewelry-Auction-Web-Application\JewelryAuctionAPI\JewelryAuctionAPI\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
 C:\Users\Senuki\Desktop\Projects\Jewelry-Auction-Web-Application\JewelryAuctionAPI\JewelryAuctionAPI\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\Senuki\Desktop\Projects\Jewelry-Auction-Web-Application\JewelryAuctionAPI\JewelryAuctionAPI\bin\Debug\net8.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\M.C Ramanayake\Documents\GitHub\Jewelry-Auction-Web-Application\JewelryAuctionAPI\JewelryAuctionAPI\bin\Debug\net8.0\EntityFramework.SqlServer.dll
+C:\Users\M.C Ramanayake\Documents\GitHub\Jewelry-Auction-Web-Application\JewelryAuctionAPI\JewelryAuctionAPI\bin\Debug\net8.0\EntityFramework.dll
+C:\Users\M.C Ramanayake\Documents\GitHub\Jewelry-Auction-Web-Application\JewelryAuctionAPI\JewelryAuctionAPI\bin\Debug\net8.0\System.Data.SqlClient.dll
+C:\Users\M.C Ramanayake\Documents\GitHub\Jewelry-Auction-Web-Application\JewelryAuctionAPI\JewelryAuctionAPI\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+C:\Users\M.C Ramanayake\Documents\GitHub\Jewelry-Auction-Web-Application\JewelryAuctionAPI\JewelryAuctionAPI\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+C:\Users\M.C Ramanayake\Documents\GitHub\Jewelry-Auction-Web-Application\JewelryAuctionAPI\JewelryAuctionAPI\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+C:\Users\M.C Ramanayake\Documents\GitHub\Jewelry-Auction-Web-Application\JewelryAuctionAPI\JewelryAuctionAPI\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\M.C Ramanayake\Documents\GitHub\Jewelry-Auction-Web-Application\JewelryAuctionAPI\JewelryAuctionAPI\bin\Debug\net8.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
