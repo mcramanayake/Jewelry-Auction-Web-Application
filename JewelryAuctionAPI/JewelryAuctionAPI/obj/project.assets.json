@@ -4861,7 +4861,7 @@
 >>>>>>> 4adb2f54f574f2712cd0650b4acced44cda62f14
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\M.C Ramanayake\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Senuki\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
