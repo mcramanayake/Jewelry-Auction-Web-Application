@@ -43,7 +43,7 @@
     padding: 10px;
     font-size: 1rem;
     background-color: #f5f5f5;
-    border: 2px solid #000000;
+    border: 2px solid #3e3737;
     border-radius: 5px;
     color: #333;
     cursor: pointer;
@@ -54,7 +54,7 @@
 
 
 .sort-options select:hover {
-    border-color: #502990;
+    border-color: #100325;
     box-shadow: 0 0 8px rgba(100, 50, 168, 0.2); /* Light shadow effect */
 }
 
@@ -168,6 +168,39 @@
 }
 
 .heroP {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+
+/* Hero2 Section Styles */
+.hero2 {
+    position: relative;
+    height: 60vh;
+    background-image: url('../Assests/homepic4.jpg'); /* Link to the background image */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    color: white;
+}
+
+.hero-text2 {
+    position: absolute;
+    top: 40%;
+    right: 3%; /* Adjust this to move text closer to the left side */
+    transform: translateY(-50%); /* Center vertically */
+    text-align: left; /* Align text to the left */
+    max-width: 40%; /* Control text width for better readability */
+}
+
+.heroH12 {
+    font-size: 3rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.heroP2 {
     font-size: 1.2rem;
     margin: 1rem 0;
 }

@@ -81,13 +81,13 @@ const MyAccount = () => {
         e.preventDefault();
         setLoading(true);
         try {
-            const sessionId = localStorage.getItem('sessionId'); // Check this value
+            const sessionId = localStorage.getItem('sessionId'); // Get sessionId from localStorage
             console.log(sessionId);
             const response = await fetch(`https://localhost:7137/api/UserDetailsUpdate/update`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
-                    Id: userData.id,
+                    Id: userData.id, // User ID from backend
                     PhoneNumber: formData.PhoneNumber,
                     Address: formData.Address,
                     City: formData.City,
