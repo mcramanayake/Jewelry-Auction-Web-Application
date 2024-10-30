@@ -172,68 +172,6 @@ const HomePage = () => {
                     </div>
                 )}
             </div>
-
-        
-      {/* Hero Section */}
-      <div className="hero">
-        <div className="hero-text">
-          <h1 className="heroH1">THE BIGGEST <br /> MARKETPLACE</h1>
-          <p className="heroP">
-            Explore our exclusive auctions and discover unique items <br />
-            at unbeatable prices. Join the community today <br />
-            and start bidding on your next treasure!
-          </p>
-        </div>
-      </div>
-
-      <div className="homepage">
-        <h1 className="homeh1">Sell With Us Items</h1>
-
-      {/* Search and Sort Options Container */}
-      <div className="search-sort-container">
-      {/* Search Bar */}
-        <div className="search-bar">
-          <input
-            type="text"
-            placeholder="Search for items..."
-            value={searchQuery}
-            onChange={handleSearchChange}
-          />
-        </div>
-
-      {/* Sort Options */}
-        <div className="sort-options">
-          <label htmlFor="sort">Sort by:</label>
-          <select id="sort" value={sortOption} onChange={handleSortChange}>
-            <option value="name">Name</option>
-            <option value="price">Price</option>
-          </select>
-        </div>
-      </div>
-
-      {/* Loading and Item Container */}
-      {loading ? (
-        <div className="loading">Loading...</div>
-      ) : (
-        <div className="items-container">
-          {filteredItems.length > 0 ? (
-            filteredItems.map(item => (
-              <div key={item.id} className="auction-item">
-                <h2 className='cardH2'>{item.itemName}</h2>
-                <p className='cardP1'>{item.message}</p>
-                <p>Price: ${item.price}</p>
-                {item.filePath && <img src={item.filePath} alt={item.itemName} />}
-                <button className="bid-button">Place Bid</button>
-              </div>
-            ))
-          ) : (
-            <p>No items available for sale.</p>
-          )}
-        </div>
-      )}
-    </div>
-
-
     </div>
   );
 
