@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using JewelryAuctionAPI.Models;
 using JewelryAuctionAPI.Data;
 
-namespace YourNamespace.Controllers
+namespace JewelryAuctionAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
