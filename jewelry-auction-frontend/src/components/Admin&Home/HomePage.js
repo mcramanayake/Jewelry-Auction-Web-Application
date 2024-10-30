@@ -176,6 +176,20 @@ const HomePage = () => {
                     </div>
                 )}
             </div>
+
+            {/* Hero Section */}
+            <div className="hero2">
+                <div className="hero-text2">
+                    <h1 className="heroH12">
+                    Meet With a <br />  Specialist
+                    </h1>
+                    <p className="heroP2">
+                    Our specialists will be in traveling in the upcoming months,{' '}
+                        <br />
+                        please contact us to arrange a free and confidential valuation. <br />
+                    </p>
+                </div>
+            </div>
     </div>
   );
 

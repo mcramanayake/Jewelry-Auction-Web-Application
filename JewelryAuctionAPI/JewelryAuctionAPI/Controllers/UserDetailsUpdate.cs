@@ -14,34 +14,43 @@ namespace JewelryAuctionAPI.Controllers
             _context = context;
         }
 
-        // POST: api/UserDetailsUpdate/update
+        // POST api/UserDetailsUpdate/update
         [HttpPost("update")]
-        public async Task<IActionResult> UpdateUserDetails([FromBody] UserDetails model)
+        public async Task<IActionResult> UpdateUserDetails([FromBody] UserDetails userDetails)
         {
-            var userDetails = _context.UserDetails.FirstOrDefault(u => u.Id == model.Id);
-
-            if (userDetails == null)
+            if (userDetails == null || userDetails.Id == 0)
             {
-                return NotFound("User details not found.");
+                return BadRequest("Invalid user details.");
             }
 
-            // Update fields
-            userDetails.PhoneNumber = model.PhoneNumber;
-            userDetails.Address = model.Address;
-            userDetails.City = model.City;
-            userDetails.PostalCode = model.PostalCode;
+            // Check if the user exists in the Signups table
+            var signupExists = await _context.Signups.AnyAsync(s => s.Id == userDetails.Id);
+            if (!signupExists)
+            {
+                return NotFound("Signup ID not found.");
+            }
 
-            try
+            // Check if UserDetails already exist for the SignupId
+            var existingUserDetails = await _context.UserDetails
+                .FirstOrDefaultAsync(u => u.Id == userDetails.Id);
+
+            if (existingUserDetails == null)
             {
-                await _context.SaveChangesAsync();
-                return Ok("User details updated successfully.");
+                // Create a new UserDetails entry
+                _context.UserDetails.Add(userDetails);
             }
-            catch (Exception ex)
+            else
             {
-                return BadRequest($"Failed to update user details: {ex.Message}");
+                // Update existing UserDetails entry
+                existingUserDetails.PhoneNumber = userDetails.PhoneNumber;
+                existingUserDetails.Address = userDetails.Address;
+                existingUserDetails.City = userDetails.City;
+                existingUserDetails.PostalCode = userDetails.PostalCode;
+                _context.UserDetails.Update(existingUserDetails);
             }
+
+            await _context.SaveChangesAsync();
+            return Ok("User details updated successfully.");
         }
-
-
     }
 }
