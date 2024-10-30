@@ -11,13 +11,12 @@ import Winnings from './components/Profile/Winnings';
 import ErrorBoundary from './components/ErrorBoundary';
 import NotFound from './components/NotFound';
 import HomePage from './components/Admin&Home/HomePage';
-import Auction from './components/Auctions/Auctions';
+import Auctions from './components/Auctions/Auctions';
 import AddItemPage from './components/Admin&Home/AddItemPage';
 import AdminDashboard from './components/Admin&Home/AdminDashboard';
 import SellWithUs from "./components/SellWithUs&ContactUs&AboutUs/SellWithUs";
 import Contact from "./components/SellWithUs&ContactUs&AboutUs/Contact";
 import AboutUs from "./components/SellWithUs&ContactUs&AboutUs/AboutUs";
-import Auction from "./components/Auctions/Auctions";
 
 
 function App() {
@@ -72,8 +71,8 @@ function App() {
       element:<AboutUs />
     },
     {
-      path:"/Auction", 
-      element:<Auction />
+      path:"/Auctions", 
+      element:<Auctions />
     },
     {
       path: "*", // This will catch all undefined routes
