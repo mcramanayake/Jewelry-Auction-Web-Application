@@ -14,11 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JewelryAuctionAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< HEAD
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b7be7f43efe8e1e666bd448b36d94e136611d82d")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3e53336c443ace644837dc786a1b81d9cbe94622")]
->>>>>>> adminBranch
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c7c075a86e75cc943a86952e2deb95d54bb7a1fd")]
 [assembly: System.Reflection.AssemblyProductAttribute("JewelryAuctionAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JewelryAuctionAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

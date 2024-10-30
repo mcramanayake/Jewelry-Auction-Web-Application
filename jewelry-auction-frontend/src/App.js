@@ -3,14 +3,15 @@
 //import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import LoginSignup from './components/LoginSignUp/LoginSignup';
 import Login from './components/LoginSignUp/Login';
-import {RouterProvider, createBrowserRouter} from "react-router-dom";
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import MyAccount from './components/Profile/MyAccount';
 import MyBids from './components/Profile/MyBids';
-import Payments from './components/Profile/Payments'; 
+import Payments from './components/Profile/Payments';
 import Winnings from './components/Profile/Winnings';
 import ErrorBoundary from './components/ErrorBoundary';
 import NotFound from './components/NotFound';
 import HomePage from './components/Admin&Home/HomePage';
+import Auction from './components/Auctions/Auctions';
 import AddItemPage from './components/Admin&Home/AddItemPage';
 import AdminDashboard from './components/Admin&Home/AdminDashboard';
 import SellWithUs from "./components/SellWithUs&ContactUs&AboutUs/SellWithUs";
@@ -18,8 +19,9 @@ import Contact from "./components/SellWithUs&ContactUs&AboutUs/Contact";
 import AboutUs from "./components/SellWithUs&ContactUs&AboutUs/AboutUs";
 import Auction from "./components/Auctions/Auctions";
 
-function App() {
 
+function App() {
+    
   const route = createBrowserRouter ([
     {
       path:"/",
@@ -80,36 +82,16 @@ function App() {
   ]);
 
 
- /* const [user, setUser] = useState(null);
-  const [loading, setLoading] = useState(true);
+ 
 
-  useEffect(() => {
-    const fetchUser = () => {
-      const storedUser = JSON.parse(localStorage.getItem('user'));
-      if (storedUser) {
-        setUser(storedUser);
-      }
-      setLoading(false);
-    };
-    fetchUser();
-  }, []);
+    return (
+        <ErrorBoundary>
+            <div>
+                <RouterProvider router={route}></RouterProvider>
+            </div>
+        </ErrorBoundary>
 
-  const isAdmin = user?.role === 'admin';
-
-  if (loading) return <div>Loading...</div>; */
-
-
- // const isAdmin = user?.role === 'admin';
-  
-  return (
-
-    <ErrorBoundary>
-      <div>
-        <RouterProvider router={route}></RouterProvider>
-      </div>
-    </ErrorBoundary>
-
-   /* <Router>
+        /* <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<LoginPage setUser={setUser} />} />
@@ -120,7 +102,7 @@ function App() {
 
       </Routes>
     </Router> */
-  );
+    );
 }
 
 export default App;

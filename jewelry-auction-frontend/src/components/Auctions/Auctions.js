@@ -1,4 +1,3 @@
-// src/components/Auctions.js
 import React, { useState, useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import './Auctions.css';
@@ -12,7 +11,7 @@ function Auctions() {
         const fetchAuctionItems = async () => {
             try {
                 const response = await axios.get(
-                    'https://localhost:7137/api/Auction'
+                    'https://localhost:7137/api/SellWithUs'
                 );
                 setAuctionItems(response.data);
             } catch (error) {
@@ -26,7 +25,6 @@ function Auctions() {
         setActiveTab(tab);
     };
 
-    // Filter items based on whether they are sold or not
     const liveAuctions = auctionItems.filter((item) => !item.sold);
     const pastAuctions = auctionItems.filter((item) => item.sold);
 
@@ -59,13 +57,18 @@ function Auctions() {
                             <div className="auction-cards">
                                 {liveAuctions.map((item) => (
                                     <div key={item.id} className="auction-card">
-                                        <h2>{item.name}</h2>
-                                        <p>{item.description}</p>
+                                        <h2>{item.itemName}</h2>
+                                        <p>Price: ${item.price.toFixed(2)}</p>
                                         <p>
-                                            Starting Price: $
-                                            {item.startingPrice}
+                                            Latest Price: $
+                                            {item.latestPrice.toFixed(2)}
                                         </p>
-                                        <p>Latest Price: ${item.latestPrice}</p>
+                                        <p>
+                                            Auction Date:{' '}
+                                            {new Date(
+                                                item.auctionDate
+                                            ).toLocaleDateString()}
+                                        </p>
                                     </div>
                                 ))}
                             </div>
@@ -76,10 +79,17 @@ function Auctions() {
                         <div className="auction-cards">
                             {pastAuctions.map((item) => (
                                 <div key={item.id} className="auction-card">
-                                    <h2>{item.name}</h2>
-                                    <p>{item.description}</p>
-                                    <p>Starting Price: ${item.startingPrice}</p>
-                                    <p>Sold for: ${item.latestPrice}</p>
+                                    <h2>{item.itemName}</h2>
+                                    <p>Price: ${item.price.toFixed(2)}</p>
+                                    <p>
+                                        Sold for: ${item.latestPrice.toFixed(2)}
+                                    </p>
+                                    <p>
+                                        Auction Date:{' '}
+                                        {new Date(
+                                            item.auctionDate
+                                        ).toLocaleDateString()}
+                                    </p>
                                 </div>
                             ))}
                         </div>

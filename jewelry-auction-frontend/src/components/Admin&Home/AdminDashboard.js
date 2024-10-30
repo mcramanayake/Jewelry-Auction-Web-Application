@@ -10,7 +10,9 @@ const AdminDashboard = () => {
     const fetchUsers = async () => {
         setLoading(true);
         try {
-            const response = await axios.get('https://localhost:7137/api/users');
+            const response = await axios.get(
+                'https://localhost:7137/api/users'
+            );
             setUsers(response.data);
         } catch (error) {
             console.error('Error fetching users:', error);
@@ -22,7 +24,9 @@ const AdminDashboard = () => {
     const fetchItems = async () => {
         setLoading(true);
         try {
-            const response = await axios.get('https://localhost:7137/api/sellwithus');
+            const response = await axios.get(
+                'https://localhost:7137/api/sellwithus'
+            );
             setItems(response.data);
         } catch (error) {
             console.error('Error fetching items:', error);
@@ -37,7 +41,9 @@ const AdminDashboard = () => {
     };
 
     const makeAdmin = async (userId) => {
-        await axios.patch(`https://localhost:7137/api/users/${userId}/makeAdmin`);
+        await axios.patch(
+            `https://localhost:7137/api/users/${userId}/makeAdmin`
+        );
         fetchUsers();
     };
 
@@ -53,11 +59,13 @@ const AdminDashboard = () => {
 
     return (
         <div className="admin-dashboard">
-            <h1 className='adminH1'>Admin Dashboard</h1>
+            <h1 className="adminH1">Admin Dashboard</h1>
 
-            {loading ? <p>Loading...</p> : (
+            {loading ? (
+                <p>Loading...</p>
+            ) : (
                 <>
-                    <h2 className='adminH22'>Manage Users</h2>
+                    <h2 className="adminH22">Manage Users</h2>
                     <table className="user-table">
                         <thead>
                             <tr>
@@ -69,16 +77,28 @@ const AdminDashboard = () => {
                             </tr>
                         </thead>
                         <tbody>
-                            {users.map(user => (
+                            {users.map((user) => (
                                 <tr key={user.id}>
                                     <td>{user.firstName}</td>
                                     <td>{user.lastName}</td>
                                     <td>{user.email}</td>
                                     <td>{user.role}</td>
                                     <td>
-                                        <button className='user1Btn' onClick={() => deleteUser(user.id)}>Delete User</button>
-                                        {user.role !== "Admin" && (
-                                            <button className='user2Btn' onClick={() => makeAdmin(user.id)}>Make Admin</button>
+                                        <button
+                                            className="user1Btn"
+                                            onClick={() => deleteUser(user.id)}
+                                        >
+                                            Delete User
+                                        </button>
+                                        {user.role !== 'Admin' && (
+                                            <button
+                                                className="user2Btn"
+                                                onClick={() =>
+                                                    makeAdmin(user.id)
+                                                }
+                                            >
+                                                Make Admin
+                                            </button>
                                         )}
                                     </td>
                                 </tr>
@@ -86,7 +106,7 @@ const AdminDashboard = () => {
                         </tbody>
                     </table>
 
-                    <h2 className='adminH2'>Manage Items</h2>
+                    <h2 className="adminH2">Manage Items</h2>
                     <table className="item-table">
                         <thead>
                             <tr>
@@ -96,12 +116,17 @@ const AdminDashboard = () => {
                             </tr>
                         </thead>
                         <tbody>
-                            {items.map(item => (
+                            {items.map((item) => (
                                 <tr key={item.id}>
                                     <td>{item.itemName}</td>
                                     <td>${item.price}</td>
                                     <td>
-                                        <button className='itemBtn' onClick={() => deleteItem(item.id)}>Delete Item</button>
+                                        <button
+                                            className="itemBtn"
+                                            onClick={() => deleteItem(item.id)}
+                                        >
+                                            Delete Item
+                                        </button>
                                     </td>
                                 </tr>
                             ))}
