@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using System;
 using Microsoft.AspNetCore.Identity;
 using JewelryAuctionAPI.Models;
+using Microsoft.Extensions.Hosting;
+using System.Data.Entity.Infrastructure;
 
 namespace JewelryAuctionAPI.Controllers
 {
@@ -42,6 +44,46 @@ namespace JewelryAuctionAPI.Controllers
             }
 
             return Ok(user);
+        }
+
+        // POST api/profiledetails/insert
+        [HttpPost("api/profiledetails/insert")]
+        public async Task<IActionResult> InsertUserDetails([FromBody] UserDetails model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            // Check if user exists in Signups table
+            var user = await _context.Signups.FindAsync(model.Id);
+            if (user == null)
+            {
+                return NotFound("User not found.");
+            }
+
+            // Create a new UserDetail entity
+            var userDetails = new UserDetails
+            {
+                Id = model.Id, // Assigning the Id from Signups
+                PhoneNumber = model.PhoneNumber,
+                Address = model.Address,
+                City = model.City,
+                PostalCode = model.PostalCode
+            };
+
+            // Add to the UserDetails table
+            await _context.UserDetails.AddAsync(userDetails);
+
+            try
+            {
+                await _context.SaveChangesAsync();
+                return Ok("User details inserted successfully.");
+            }
+            catch (System.Data.Entity.Infrastructure.DbUpdateException ex)
+            {
+                return BadRequest($"Failed to insert user details: {ex.Message}");
+            }
         }
     }
 }
