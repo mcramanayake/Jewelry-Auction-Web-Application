@@ -1,22 +1,20 @@
 /* Styling for the Sell With Us section */
-.sell-with-us-section {
-    width: 100%;
-    margin: 0 auto;
-  }
-  
-  .image-container {
-    position: relative;
-    width: 100%;
-    max-width: 1280px;
-    margin: 0 auto;
-  }
-  
-  .image-container img {
-    width: 100%;
-    height: 100%;
-    max-height: 250px;
-    display: block;
-  }
+  .sell-with-us-section {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    height: 40vh;
+    background-image: url('../Assests/sell.jpg'); 
+    background-size: cover;
+    background-position: center;
+}
+
+.sell-with-us-section h1 {
+    font-size: 3rem;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 10%;
+}
   
   .overlay-text {
     position: absolute;
