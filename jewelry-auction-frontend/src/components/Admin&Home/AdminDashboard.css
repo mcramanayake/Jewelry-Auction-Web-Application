@@ -2,11 +2,11 @@
     padding: 20px;
     margin: 30px;
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9; /* Light background for contrast */
+    background-color: #000000; /* Light background for contrast */
 }
 
 .adminH1 {
-    color: #333;
+    color: #8000ff;
     text-align: center;
 }
 
@@ -48,11 +48,12 @@
 
 .user-table td, .item-table td {
     padding: 12px;
+    color: #f1f1f1;
     border-bottom: 1px solid #ddd; /* Light border for rows */
 }
 
 .user-table tr:hover, .item-table tr:hover {
-    background-color: #f1f1f1; /* Highlight on hover */
+    background-color: #323030; /* Highlight on hover */
 }
 
 .user1Btn {
