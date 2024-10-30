@@ -25,27 +25,34 @@ const MyBids = () => {
                 const userBids = await response.json();
                 console.log(userBids);
 
-                // Fetch additional auction item details for each bid
-                const bidsWithDetails = await Promise.all(
-                    userBids.map(async (bid) => {
-                        const itemResponse = await fetch(
-                            `https://localhost:7137/api/Auction/${bid.itemId}`
-                        );
-                        const itemDetails = await itemResponse.json();
-                        console.log(itemDetails);
+                // Fetch additional item details from SellWithUs endpoint
+                const itemsResponse = await fetch(
+                    'https://localhost:7137/api/SellWithUs'
+                );
+                const sellWithUsItems = await itemsResponse.json();
+                console.log(sellWithUsItems);
 
+                // Combine bids with SellWithUs item details
+                const bidsWithDetails = userBids.map((bid) => {
+                    // Find corresponding item in SellWithUs data
+                    const itemDetails = sellWithUsItems.find(
+                        (item) => item.id === bid.itemId
+                    );
+                    if (itemDetails) {
                         // Calculate auction end date (7 days from auction start)
                         const auctionEnd = new Date(itemDetails.auctionDate);
                         auctionEnd.setDate(auctionEnd.getDate() + 7); // Add 7 days
 
                         return {
                             ...bid,
-                            itemName: itemDetails.name,
+                            itemName: itemDetails.itemName,
                             auctionStart: itemDetails.auctionDate,
                             auctionEnd: auctionEnd.toISOString(), // Store as ISO string
+                            bidAmount: itemDetails.price, // Use price from SellWithUs
                         };
-                    })
-                );
+                    }
+                    return bid; // Return original bid if no corresponding item found
+                });
 
                 setBids(bidsWithDetails);
             } catch (error) {
