@@ -4846,11 +4846,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Senuki\\Desktop\\React\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\JewelryAuctionAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Senuki\\Desktop\\NSBM\\2 year\\2 year 2 sem\\SA\\Assignments\\final project\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\JewelryAuctionAPI.csproj",
       "projectName": "JewelryAuctionAPI",
-      "projectPath": "C:\\Users\\Senuki\\Desktop\\React\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\JewelryAuctionAPI.csproj",
+      "projectPath": "C:\\Users\\Senuki\\Desktop\\NSBM\\2 year\\2 year 2 sem\\SA\\Assignments\\final project\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\JewelryAuctionAPI.csproj",
       "packagesPath": "C:\\Users\\Senuki\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Senuki\\Desktop\\React\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\obj\\",
+      "outputPath": "C:\\Users\\Senuki\\Desktop\\NSBM\\2 year\\2 year 2 sem\\SA\\Assignments\\final project\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Senuki\\AppData\\Roaming\\NuGet\\NuGet.Config",

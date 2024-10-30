@@ -47,6 +47,32 @@
   },
   {
     "ContainingType": "JewelryAuctionAPI.Controllers.AuctionController",
+    "Method": "GetItem",
+    "RelativePath": "api/Auction/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JewelryAuctionAPI.Models.AuctionItem",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JewelryAuctionAPI.Controllers.AuctionController",
     "Method": "UpdateItem",
     "RelativePath": "api/Auction/{id}",
     "HttpMethod": "PUT",
@@ -114,6 +140,167 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "JewelryAuctionAPI.Controllers.BidsController",
+    "Method": "CreateBid",
+    "RelativePath": "api/Bids",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bid",
+        "Type": "JewelryAuctionAPI.Models.Bid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JewelryAuctionAPI.Models.Bid",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JewelryAuctionAPI.Controllers.BidsController",
+    "Method": "GetAllBids",
+    "RelativePath": "api/Bids",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[JewelryAuctionAPI.Models.Bid, JewelryAuctionAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JewelryAuctionAPI.Controllers.BidsController",
+    "Method": "DeleteBid",
+    "RelativePath": "api/Bids/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JewelryAuctionAPI.Controllers.BidsController",
+    "Method": "UpdateBid",
+    "RelativePath": "api/Bids/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updatedBid",
+        "Type": "JewelryAuctionAPI.Models.Bid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JewelryAuctionAPI.Controllers.BidsController",
+    "Method": "GetBidById",
+    "RelativePath": "api/Bids/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JewelryAuctionAPI.Models.Bid",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JewelryAuctionAPI.Controllers.BidsController",
+    "Method": "GetBidsByItem",
+    "RelativePath": "api/Bids/item/{itemId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "itemId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[JewelryAuctionAPI.Models.Bid, JewelryAuctionAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JewelryAuctionAPI.Controllers.BidsController",
+    "Method": "GetBidsByUser",
+    "RelativePath": "api/Bids/user/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[JewelryAuctionAPI.Models.Bid, JewelryAuctionAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "JewelryAuctionAPI.Controllers.ContactController",
     "Method": "SubmitContactMessage",
     "RelativePath": "api/Contact/submit",
@@ -176,6 +363,32 @@
     "Method": "GetProfileDetails",
     "RelativePath": "api/profiledetails/{id}",
     "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JewelryAuctionAPI.Controllers.SellWithUsController",
+    "Method": "GetSellWithUsItems",
+    "RelativePath": "api/SellWithUs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JewelryAuctionAPI.Controllers.SellWithUsController",
+    "Method": "DeleteSellWithUsItem",
+    "RelativePath": "api/SellWithUs/{id}",
+    "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -284,5 +497,21 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "JewelryAuctionAPI.Controllers.UserDetailsUpdate",
+    "Method": "UpdateUserDetails",
+    "RelativePath": "update",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userDetails",
+        "Type": "JewelryAuctionAPI.Models.UserDetails",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]
