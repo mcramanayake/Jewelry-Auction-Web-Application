@@ -13,6 +13,7 @@ namespace JewelryAuctionAPI.Data
         public DbSet<Bid> Bids { get; set; }
         public object AboutTable { get; internal set; }
 
+        public DbSet<AuctionItem> AuctionItems { get; set; }
         public DbSet<UserDetails> UserDetails { get; set; }
     }
 }
