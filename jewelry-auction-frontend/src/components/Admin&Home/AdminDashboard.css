@@ -1,0 +1,101 @@
+.admin-dashboard {
+    padding: 20px;
+    margin: 30px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* Light background for contrast */
+}
+
+.adminH1 {
+    color: #333;
+    text-align: center;
+}
+
+.adminH2 {
+    color: blueviolet;
+}
+
+.adminH22 {
+    color: #4CAF50;
+}
+
+.user-table {
+    width: 100%;
+    border-collapse: collapse; /* Ensures no space between borders */
+    margin-bottom: 30px; /* Increased margin below each table */
+    margin-top: 20px; /* Added margin above each table */
+}
+
+.item-table{
+    width: 100%;
+    border-collapse: collapse; /* Ensures no space between borders */
+    margin-bottom: 30px; /* Increased margin below each table */
+    margin-top: 20px; /* Added margin above each table */
+}
+
+.user-table th {
+    background-color: #4CAF50; /* Header background color */
+    color: white; /* White text for header */
+    padding: 12px;
+    text-align: left;
+}
+
+.item-table th{
+    background-color: blueviolet; /* Header background color */
+    color: white; /* White text for header */
+    padding: 12px;
+    text-align: left;
+}
+
+.user-table td, .item-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd; /* Light border for rows */
+}
+
+.user-table tr:hover, .item-table tr:hover {
+    background-color: #f1f1f1; /* Highlight on hover */
+}
+
+.user1Btn {
+    background-color: #ff3f3f; /* Green background */
+    color: white; /* White text */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px; /* Increased margin between buttons */
+    margin-bottom: 10px; /* Added margin below buttons */
+}
+
+.user2Btn {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px; /* Increased margin between buttons */
+    margin-bottom: 10px; /* Added margin below buttons */
+}
+
+.itemBtn {
+    background-color: blueviolet; /* Green background */
+    color: white; /* White text */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px; /* Increased margin between buttons */
+    margin-bottom: 10px; /* Added margin below buttons */
+}
+
+.user2Btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.user1Btn:hover {
+    background-color: #ff0000; /* Darker green on hover */
+}
+
+.itemBtn:hover {
+    background-color: #fb00ff; /* Darker green on hover */
+}
