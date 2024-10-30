@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from 'react';
 import "./AboutUs.css";
 import { Helmet } from "react-helmet"; // Import Helmet
-import yourImage1 from "./Images/SellWithUs.png";
+import "../Profile/Navbar.css";
+import { FaBars, FaCircleUser } from 'react-icons/fa6';
+import { Link } from 'react-router-dom';
 import Chinthaka from "./Images/Chinthaka.jpg";
 import Lakmi from "./Images/Lakmi.jpg";
 import Isira from "./Images/Isira.jpg";
@@ -10,8 +12,59 @@ import Shehan from "./Images/Shehan.jpg";
 import Sandun from "./Images/Sandun.jpg";
 
 export default function AboutUs() {
+
+  const [isOpen, setIsOpen] = useState(false);
+  
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+};
+
+  
+
   return (
     <div>
+      {/*Navbar*/}
+      <div className="navbar">
+                <div className="nav-logo">
+                    <p>
+                        <Link to="/HomePage" className="logo-home">
+                            The Auction Room
+                        </Link>
+                    </p>
+                </div>
+                <ul className={`nav-menu ${isOpen ? 'nav-menu-active' : ''}`}>
+                    <li>Auctions</li>
+                    <li>
+                        <Link to="/sell-with-us" className="user-nav">
+                            Sell with us
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="/aboutus" className="user-nav">
+                            About
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="/contact-us" className="user-nav">
+                            Contact
+                        </Link>
+                    </li>
+                </ul>
+                <div className="nav-login-user">
+                    <Link to="/MyAccount" className="user-nav">
+                        <FaCircleUser size={25} />
+                    </Link>
+
+                    <div className="nav-icon" onClick={toggleMenu}>
+                        <FaBars size={25} />
+                    </div>
+                </div>
+            </div>
+
+        <div className="about-section-hero">
+                <h1>About Us</h1>
+        </div>
+
       <Helmet>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link
@@ -33,10 +86,7 @@ export default function AboutUs() {
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
       </Helmet>
 
-      <div className="image-container">
-        <img src={yourImage1} alt="Contact" />
-        <div className="overlay-text">Contact</div>
-      </div>
+      
 
       <div class="container pt-7">
         <div className="about-row">
@@ -463,6 +513,29 @@ export default function AboutUs() {
           </div>
         </div>
       </div>
+      {/* Footer */}
+      <div className="footer">
+                <div className="first">
+                    <h1>The Auction Room</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
+                <div className="second">
+                    <ul>
+                        <li>Auctions</li>
+                        <li>Past Auctions</li>
+                        <li>Profile</li>
+                        <li>Sell with us</li>
+                    </ul>
+                </div>
+                <div className="third">
+                    <ul>
+                        <li>About</li>
+                        <li>Contact</li>
+                        <li>Terms & Conditions</li>
+                        <li>Privacy Policy</li>
+                    </ul>
+                </div>
+            </div>
     </div>
   );
 }

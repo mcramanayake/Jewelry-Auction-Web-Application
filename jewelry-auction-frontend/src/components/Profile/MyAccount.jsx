@@ -81,12 +81,18 @@ const MyAccount = () => {
         e.preventDefault();
         setLoading(true);
         try {
-            const response = await fetch(`${API_URL}/update`, {
+            const sessionId = localStorage.getItem('sessionId'); // Check this value
+            console.log(sessionId);
+            const response = await fetch(`https://localhost:7137/api/UserDetailsUpdate/update`, {
                 method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({ ...formData }),
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    Id: userData.id,
+                    PhoneNumber: formData.PhoneNumber,
+                    Address: formData.Address,
+                    City: formData.City,
+                    PostalCode: formData.PostalCode,
+                }),
             });
 
             if (!response.ok) {
@@ -176,11 +182,7 @@ const MyAccount = () => {
                 {/* Form */}
                 <div className="form">
                     <form onSubmit={handleSubmit}>
-                        {/* <div className='pp'>
-                            <p>Profile Picture</p>
-                            <FaCircleUser size={80} color={'#222222'} />
-                            <button className='update_pp' type='button'>Update Picture</button>
-                        </div>*/}
+                       
                         <div className="account_details">
                             <input
                                 type="text"

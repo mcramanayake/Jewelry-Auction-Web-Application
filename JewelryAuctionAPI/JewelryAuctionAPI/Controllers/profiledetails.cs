@@ -3,6 +3,8 @@ using Microsoft.EntityFrameworkCore;
 using JewelryAuctionAPI.Data; // Ensure this is the correct namespace for your DbContext
 using System.Threading.Tasks;
 using System;
+using Microsoft.AspNetCore.Identity;
+using JewelryAuctionAPI.Models;
 
 namespace JewelryAuctionAPI.Controllers
 {

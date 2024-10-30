@@ -8,10 +8,11 @@ namespace JewelryAuctionAPI.Data
         public AuctionContext(DbContextOptions<AuctionContext> options) : base(options) { }
 
         public DbSet<SellWithUsItem> SellWithUsTable { get; set; }
-        public DbSet<AuctionItem> AuctionItems { get; set; }
         public DbSet<Settings> Settings { get; set; }
         public DbSet<Signup> Signups { get; set; }
         public DbSet<Bid> Bids { get; set; }
         public object AboutTable { get; internal set; }
+
+        public DbSet<UserDetails> UserDetails { get; set; }
     }
 }
