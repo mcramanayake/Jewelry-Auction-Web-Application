@@ -4846,11 +4846,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
+      "projectUniqueName": "C:\\Users\\Senuki\\Desktop\\Projects\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\JewelryAuctionAPI.csproj",
+      "projectName": "JewelryAuctionAPI",
+      "projectPath": "C:\\Users\\Senuki\\Desktop\\Projects\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\JewelryAuctionAPI.csproj",
+      "packagesPath": "C:\\Users\\Senuki\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Senuki\\Desktop\\Projects\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\obj\\",
+=======
       "projectUniqueName": "C:\\Users\\M.C Ramanayake\\Documents\\GitHub\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\JewelryAuctionAPI.csproj",
       "projectName": "JewelryAuctionAPI",
       "projectPath": "C:\\Users\\M.C Ramanayake\\Documents\\GitHub\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\JewelryAuctionAPI.csproj",
       "packagesPath": "C:\\Users\\M.C Ramanayake\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\M.C Ramanayake\\Documents\\GitHub\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\obj\\",
+>>>>>>> 4adb2f54f574f2712cd0650b4acced44cda62f14
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\M.C Ramanayake\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4944,6 +4952,9 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
+<<<<<<< HEAD
+  }
+=======
   },
   "logs": [
     {
@@ -4953,4 +4964,5 @@
       "message": "Problem reading the cache file C:\\Users\\M.C Ramanayake\\Documents\\GitHub\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
     }
   ]
+>>>>>>> 4adb2f54f574f2712cd0650b4acced44cda62f14
 }
