@@ -22,13 +22,6 @@ const Login = () => {
       Password: Password,
     };
 
-    // Check if it's the admin login
-    if (Email === 'admin@gmail.com' && Password === 'Admin123') {
-      // Navigate to AdminDashboard
-      navigate("/AdminDashboard");
-      return; // Stop further execution
-    }
-
     const url = 'https://localhost:7137/api/Users/Login';
 
     console.log('Attempting login with:', data); // Log the login attempt
@@ -38,7 +31,7 @@ const Login = () => {
         console.log('Full login response:', result); // Log the full response
         
         if (result.status === 200) {
-          const { Message, userId, role } = result.data;
+          const { Message, Id, role } = result.data;
           localStorage.setItem('sessionId', result.data.userId); // Access result.data.userId if present
           // Navigate based on the role
           if (role === 'admin') {
@@ -100,7 +93,7 @@ const Login = () => {
             <button type="submit" className="submit" onClick={HandleLogin}>Log in</button>
           </div>
           <div className="forgot-password">
-            Not Registered? <span><Link to="/" className="btn">Register</Link></span> <Link to="/MyAccount"> Profile </Link>
+            Not Registered? <span><Link to="/" className="btn">Register</Link></span> 
           </div>
         </form>
       </div>

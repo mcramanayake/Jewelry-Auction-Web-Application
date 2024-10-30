@@ -14,43 +14,67 @@ namespace JewelryAuctionAPI.Controllers
             _context = context;
         }
 
-        // POST api/UserDetailsUpdate/update
-        [HttpPost("update")]
-        public async Task<IActionResult> UpdateUserDetails([FromBody] UserDetails userDetails)
+        // POST api/UserDetailsUpdate/insert
+        [HttpPost("api/UserDetailsUpdate/insert")]
+        public async Task<IActionResult> InsertUserDetails([FromBody] UserDetails model)
         {
-            if (userDetails == null || userDetails.Id == 0)
+            if (!ModelState.IsValid)
             {
-                return BadRequest("Invalid user details.");
+                return BadRequest(ModelState);
             }
 
-            // Check if the user exists in the Signups table
-            var signupExists = await _context.Signups.AnyAsync(s => s.Id == userDetails.Id);
-            if (!signupExists)
+            // Check if user exists in Signups table
+            var user = await _context.Signups.FindAsync(model.Id);
+            if (user == null)
             {
-                return NotFound("Signup ID not found.");
+                return NotFound("User not found.");
             }
 
-            // Check if UserDetails already exist for the SignupId
-            var existingUserDetails = await _context.UserDetails
-                .FirstOrDefaultAsync(u => u.Id == userDetails.Id);
-
-            if (existingUserDetails == null)
+            // Create a new UserDetail entity
+            var userDetails = new UserDetails
             {
-                // Create a new UserDetails entry
-                _context.UserDetails.Add(userDetails);
-            }
-            else
+                Id = model.Id, // Assigning the Id from Signups
+                PhoneNumber = model.PhoneNumber,
+                Address = model.Address,
+                City = model.City,
+                PostalCode = model.PostalCode
+            };
+
+            // Add to the UserDetails table
+            await _context.UserDetails.AddAsync(userDetails);
+
+            try
             {
-                // Update existing UserDetails entry
-                existingUserDetails.PhoneNumber = userDetails.PhoneNumber;
-                existingUserDetails.Address = userDetails.Address;
-                existingUserDetails.City = userDetails.City;
-                existingUserDetails.PostalCode = userDetails.PostalCode;
-                _context.UserDetails.Update(existingUserDetails);
+                await _context.SaveChangesAsync();
+                return Ok("User details inserted successfully.");
+            }
+            catch (DbUpdateException ex)
+            {
+                return BadRequest($"Failed to insert user details: {ex.Message}");
+            }
+        }
+
+        // GET api/UserDetailsUpdate/{id}
+        [HttpGet("api/UserDetailsUpdate/{id}")]
+        public async Task<IActionResult> GetProfileDetails(int id)
+        {
+            var userDetails = await _context.UserDetails
+                .Where(u => u.Id == id) // Assuming UserId is the primary key in your UserDetails table
+                .Select(u => new
+                {
+                    u.PhoneNumber,
+                    u.Address,
+                    u.City,
+                    u.PostalCode
+                })
+                .FirstOrDefaultAsync();
+
+            if (userDetails == null)
+            {
+                return NotFound();
             }
 
-            await _context.SaveChangesAsync();
-            return Ok("User details updated successfully.");
+            return Ok(userDetails);
         }
     }
 }

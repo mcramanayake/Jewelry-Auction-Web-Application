@@ -375,22 +375,6 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "JewelryAuctionAPI.Controllers.profiledetails",
-    "Method": "InsertUserDetails",
-    "RelativePath": "api/profiledetails/insert",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "model",
-        "Type": "JewelryAuctionAPI.Models.UserDetails",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "JewelryAuctionAPI.Controllers.SellWithUsController",
     "Method": "GetSellWithUsItems",
     "RelativePath": "api/SellWithUs",
@@ -450,6 +434,38 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JewelryAuctionAPI.Controllers.UserDetailsUpdate",
+    "Method": "GetProfileDetails",
+    "RelativePath": "api/UserDetailsUpdate/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JewelryAuctionAPI.Controllers.UserDetailsUpdate",
+    "Method": "InsertUserDetails",
+    "RelativePath": "api/UserDetailsUpdate/insert",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "JewelryAuctionAPI.Models.UserDetails",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {
@@ -513,21 +529,5 @@
         "StatusCode": 200
       }
     ]
-  },
-  {
-    "ContainingType": "JewelryAuctionAPI.Controllers.UserDetailsUpdate",
-    "Method": "UpdateUserDetails",
-    "RelativePath": "update",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "userDetails",
-        "Type": "JewelryAuctionAPI.Models.UserDetails",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
   }
 ]
