@@ -4,7 +4,7 @@ import './Navbar.css';
 import { FaBars, FaCircleUser } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
 
-const API_URL = 'https://localhost:7137/api/profiledetails/{id}'; // Updated API URL
+const API_URL = 'https://localhost:7137/api/UserDetailsUpdate'; // Base API URL
 
 const MyAccount = () => {
     const navRef = useRef();
@@ -31,31 +31,43 @@ const MyAccount = () => {
         const fetchUserData = async () => {
             setLoading(true);
             try {
-                const sessionId = localStorage.getItem('sessionId'); // Get sessionId from localStorage
-                console.log(sessionId);
-                const response = await fetch(
+                const sessionId = localStorage.getItem('sessionId');
+                
+                // Fetch user profile details (FirstName, LastName, Email)
+                const profileResponse = await fetch(
                     `https://localhost:7137/api/profiledetails/${sessionId}`
-                ); // Include sessionId in the URL
+                );
 
-                if (!response.ok) {
-                    const errorDetails = await response.text();
-                    console.error('Error response:', errorDetails);
-                    throw new Error('Failed to fetch user data');
+                if (!profileResponse.ok) {
+                    throw new Error('Failed to fetch user profile data');
                 }
 
-                const data = await response.json();
-                console.log(data);
-                setUserData(data);
-                // Update formData with user data
+                const profileData = await profileResponse.json();
+
+                // Fetch user details from UserDetailsUpdate (PhoneNumber, Address, City, PostalCode)
+                const userDetailsResponse = await fetch(
+                    `https://localhost:7137/api/UserDetailsUpdate/${sessionId}`
+                );
+
+                if (!userDetailsResponse.ok) {
+                    throw new Error('Failed to fetch user details data');
+                }
+
+                const userDetailsData = await userDetailsResponse.json();
+
+                // Update formData with fetched data
                 setFormData({
-                    firstName: data.firstName || '',
-                    lastName: data.lastName || '',
-                    email: data.email || '',
-                    PhoneNumber: data.PhoneNumber || '',
-                    Address: data.Address || '',
-                    City: data.City || '',
-                    PostalCode: data.PostalCode || '',
+                    firstName: profileData.firstName || '',
+                    lastName: profileData.lastName || '',
+                    email: profileData.email || '',
+                    PhoneNumber: userDetailsData.PhoneNumber || '',
+                    Address: userDetailsData.Address || '',
+                    City: userDetailsData.City || '',
+                    PostalCode: userDetailsData.PostalCode || '',
                 });
+
+                // Optionally, you can also set userData if needed
+                setUserData(profileData);
             } catch (err) {
                 console.error('Fetch error:', err.message);
                 setError(err.message);
@@ -82,7 +94,7 @@ const MyAccount = () => {
         setLoading(true);
         try {
             const sessionId = localStorage.getItem('sessionId');
-            const response = await fetch(`https://localhost:7137/api/profiledetails/insert`, {
+            const response = await fetch(`${API_URL}/insert`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({

@@ -121,7 +121,7 @@ const LoginSignup = () => {
                     
                     <div className="forgot-password">
                         Already registered? <span><Link to="/login" className="btn">Log in</Link></span>
-                        <Link to="/MyAccount">Profile</Link>
+                       
                     </div>
                 </form>
             </div>
