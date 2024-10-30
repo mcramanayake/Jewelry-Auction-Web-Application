@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
+  "dgSpecHash": "YyWNAQkCpR8=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Senuki\\Desktop\\NSBM\\2 year\\2 year 2 sem\\SA\\Assignments\\final project\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\JewelryAuctionAPI.csproj",
+=======
   "dgSpecHash": "AywmEaxHvJY=",
   "success": true,
   "projectFilePath": "C:\\Users\\M.C Ramanayake\\Documents\\GitHub\\Jewelry-Auction-Web-Application\\JewelryAuctionAPI\\JewelryAuctionAPI\\JewelryAuctionAPI.csproj",
+>>>>>>> main
   "expectedPackageFiles": [
     "C:\\Users\\M.C Ramanayake\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\M.C Ramanayake\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
