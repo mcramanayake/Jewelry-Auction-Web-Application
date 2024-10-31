@@ -48,7 +48,7 @@ const MyBids = () => {
                             itemName: itemDetails.itemName,
                             auctionStart: itemDetails.auctionDate,
                             auctionEnd: auctionEnd.toISOString(), // Store as ISO string
-                            bidAmount: itemDetails.price, // Use price from SellWithUs
+                            bidAmount: bid.bidAmount, // Use price from SellWithUs
                         };
                     }
                     return bid; // Return original bid if no corresponding item found
@@ -75,11 +75,7 @@ const MyBids = () => {
                     </p>
                 </div>
                 <ul className={`nav-menu ${isOpen ? 'nav-menu-active' : ''}`}>
-                <li>
-                        <Link to="/Auctions" className="user-nav">
-                            Auctions
-                        </Link>
-                    </li>
+                    <li>Auctions</li>
                     <li>
                         <Link to="/sell-with-us" className="user-nav">
                             Sell with us
