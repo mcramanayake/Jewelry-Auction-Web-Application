@@ -11,6 +11,7 @@ const HomePage = () => {
     const [searchQuery, setSearchQuery] = useState('');
     const [sortOption, setSortOption] = useState('name'); // Default sort by name
     const navigate = useNavigate();
+
     useEffect(() => {
         // Fetch items from the SellWithUs table
         const fetchItems = async () => {
@@ -73,11 +74,7 @@ const HomePage = () => {
                     </p>
                 </div>
                 <ul className={`nav-menu ${isOpen ? 'nav-menu-active' : ''}`}>
-                    <li>
-                        <Link to="/Auctions" className="user-nav">
-                            Auctions
-                        </Link>
-                    </li>
+                    <li>Auctions</li>
                     <li>
                         <Link to="/sell-with-us" className="user-nav">
                             Sell with us
@@ -165,7 +162,12 @@ const HomePage = () => {
                                             alt={item.itemName}
                                         />
                                     )}
-                                    <button className="bid-button">
+                                    <button
+                                        className="bid-button"
+                                        onClick={() =>
+                                            navigate(`/create-bid/${item.id}`)
+                                        }
+                                    >
                                         Place Bid
                                     </button>
                                 </div>
@@ -176,23 +178,8 @@ const HomePage = () => {
                     </div>
                 )}
             </div>
-
-            {/* Hero Section */}
-            <div className="hero2">
-                <div className="hero-text2">
-                    <h1 className="heroH12">
-                    Meet With a <br />  Specialist
-                    </h1>
-                    <p className="heroP2">
-                    Our specialists will be in traveling in the upcoming months,{' '}
-                        <br />
-                        please contact us to arrange a free and confidential valuation. <br />
-                    </p>
-                </div>
-            </div>
-    </div>
-  );
-
+        </div>
+    );
 };
 
 export default HomePage;
