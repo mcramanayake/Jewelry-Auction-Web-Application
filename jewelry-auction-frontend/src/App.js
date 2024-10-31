@@ -14,74 +14,94 @@ import HomePage from './components/Admin&Home/HomePage';
 import Auctions from './components/Auctions/Auctions';
 import AddItemPage from './components/Admin&Home/AddItemPage';
 import AdminDashboard from './components/Admin&Home/AdminDashboard';
-import SellWithUs from "./components/SellWithUs&ContactUs&AboutUs/SellWithUs";
-import Contact from "./components/SellWithUs&ContactUs&AboutUs/Contact";
-import AboutUs from "./components/SellWithUs&ContactUs&AboutUs/AboutUs";
-
+import SellWithUs from './components/SellWithUs&ContactUs&AboutUs/SellWithUs';
+import Contact from './components/SellWithUs&ContactUs&AboutUs/Contact';
+import AboutUs from './components/SellWithUs&ContactUs&AboutUs/AboutUs';
+import CreateBid from './components/Auctions/CreateBid';
 
 function App() {
-    
-  const route = createBrowserRouter ([
-    {
-      path:"/",
-      element:<LoginSignup />,
-    },
-    {
-      path:"/login",
-      element:<Login />,
-    },
-    {
-      path: "/MyAccount",
-      element: <MyAccount />,
-    },
-    {
-      path: "/MyBids",
-      element:<MyBids />
-    },
-    {
-      path: "/Payments",
-      element: <Payments />
-    },
-    {
-      path: "/Winnings",
-      element:<Winnings />
-    },
-    {
-      path: "/HomePage",
-      element:<HomePage />
-    },
-    {
-      path: "/AddItemPage",
-      element:<AddItemPage />
-    },
-    {
-      path: "/AdminDashboard",
-      element:<AdminDashboard />
-    },
-    {
-      path:"/sell-with-us", 
-      element:<SellWithUs />
-    },
-    {
-      path:"/contact-us", 
-      element:<Contact />
-    },
-    {
-      path:"/aboutus", 
-      element:<AboutUs />
-    },
-    {
-      path:"/Auctions", 
-      element:<Auctions />
-    },
-    {
-      path: "*", // This will catch all undefined routes
-      element: <NotFound />, // Render NotFound component for unknown routes
-    }
-  ]);
+    const route = createBrowserRouter([
+        {
+            path: '/',
+            element: <LoginSignup />,
+        },
+        {
+            path: '/login',
+            element: <Login />,
+        },
+        {
+            path: '/MyAccount',
+            element: <MyAccount />,
+        },
+        {
+            path: '/MyBids',
+            element: <MyBids />,
+        },
+        {
+            path: '/Payments',
+            element: <Payments />,
+        },
+        {
+            path: '/Winnings',
+            element: <Winnings />,
+        },
+        {
+            path: '/HomePage',
+            element: <HomePage />,
+        },
+        {
+            path: '/auctions',
+            element: <Auctions />,
+        },
+        {
+            path: '/AddItemPage',
+            element: <AddItemPage />,
+        },
+        {
+            path: '/AdminDashboard',
+            element: <AdminDashboard />,
+        },
+        {
+            path: '/sell-with-us',
+            element: <SellWithUs />,
+        },
+        {
+            path: '/contact-us',
+            element: <Contact />,
+        },
+        {
+            path: '/aboutus',
+            element: <AboutUs />,
+        },
+        {
+            path: '/create-bid/:id',
+            element: <CreateBid />,
+        },
+        {
+            path: '*', // This will catch all undefined routes
+            element: <NotFound />, // Render NotFound component for unknown routes
+        },
+    ]);
 
+    /* const [user, setUser] = useState(null);
+  const [loading, setLoading] = useState(true);
 
- 
+  useEffect(() => {
+    const fetchUser = () => {
+      const storedUser = JSON.parse(localStorage.getItem('user'));
+      if (storedUser) {
+        setUser(storedUser);
+      }
+      setLoading(false);
+    };
+    fetchUser();
+  }, []);
+
+  const isAdmin = user?.role === 'admin';
+
+  if (loading) return <div>Loading...</div>; */
+
+    //const isAdmin = user?.role === 'admin';
 
     return (
         <ErrorBoundary>
