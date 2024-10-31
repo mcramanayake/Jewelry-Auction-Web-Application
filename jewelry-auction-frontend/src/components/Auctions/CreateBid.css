@@ -1,0 +1,51 @@
+/* src/CreateBid.css */
+
+.create-bid-container {
+    padding: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.create-bid-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.bid-info {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.bid-input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.submit-bid-button {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-bid-button:hover {
+    background-color: #0056b3;
+}
